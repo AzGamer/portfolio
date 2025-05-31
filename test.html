@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Transition de page animée</title>
+<style>
+  body, html {
+    margin: 0; padding: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+  }
+  .page {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+  }
+  #page1 {
+    background: #3498db;
+    z-index: 2;
+  }
+  #page2 {
+    background: #e74c3c;
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 1;
+  }
+
+  /* Classes pour l’animation */
+  .page.slide-out-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 1;
+  }
+  .page.slide-in-right {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 2;
+  }
+
+  button {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="page1" class="page slide-in-right">
+  Page 1
+</div>
+
+<div id="page2" class="page">
+  Page 2
+</div>
+
+<button id="switchBtn">Aller à la page 2</button>
+
+<script>
+  const page1 = document.getElementById('page1');
+  const page2 = document.getElementById('page2');
+  const btn = document.getElementById('switchBtn');
+
+  let onPage1 = true;
+
+  btn.addEventListener('click', () => {
+    if(onPage1) {
+      page1.classList.add('slide-out-left');
+      page1.classList.remove('slide-in-right');
+      page2.classList.add('slide-in-right');
+      page2.classList.remove('slide-out-left');
+      btn.textContent = "Retour à la page 1";
+    } else {
+      page2.classList.add('slide-out-left');
+      page2.classList.remove('slide-in-right');
+      page1.classList.add('slide-in-right');
+      page1.classList.remove('slide-out-left');
+      btn.textContent = "Aller à la page 2";
+    }
+    onPage1 = !onPage1;
+  });
+</script>
+
+</body>
+</html>
