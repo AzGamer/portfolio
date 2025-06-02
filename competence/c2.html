@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href="../index.html"><div><img src="../images/page-daccueil (1).png" alt=""></div>ACCUEIL</a></li>
-                <li><a href="../index.html"><div><img src="../images/gestion-de-projet.png" alt=""></div>PROJET</a></li>
+                <li><a href="#marker_projet"><div><img src="../images/gestion-de-projet.png" alt=""></div>PROJET</a></li>
             </ul>
         </nav>
     </header>
@@ -23,13 +23,13 @@
 
         <section>
             <div>
-                <img src="../images/numero-un.png" alt="">
+                <img src="../images/numero-2.png" alt="">
                 <h1>Optimiser</h1>
             </div>
         </section>
 
         <section>
-            <h2>PROJET</h2>
+            <h2 class="marker_projet">PROJET</h2>
             <article>
                 <h3>Automatisation d'un jeu de serpent connus sous le nom 'Snake'</h3>
 
@@ -37,19 +37,21 @@
                     <div>
                         <div>
                             <h4>Context</h4>
-                            <p>À partir du projet sur le snake réaliser dans la compétence 1, nous avons fait en sorte que le serpent puisse se déplacer de façon autonome
-                                toute en respectant les règels du jeu de serpent, et tout en s'adaptant au plateau disposant d'obstacle placé de façon aléatoire.
-                                L'objectif étant de faire en sorte que le serpent prenne les plus petits chemins possible.
+                            <p>À partir du projet Snake réalisé dans le cadre de la compétence 1, nous avons modifié le jeu afin que le serpent puisse se déplacer de manière autonome. Il respecte toujours les règles classiques du jeu Snake, tout en s’adaptant à un plateau contenant des obstacles placés aléatoirement. L’objectif est de permettre au serpent de suivre les chemins les plus courts possibles pour atteindre sa cible, à savoir manger toutes les pommes présentes sur le plateau.
+                                <br> <br>
+                                <strong>Rappel à propos du jeu de base :</strong> <br><br>
+
+                                Nous disposons d’un plateau de jeu modélisé à l’aide de caractères, tout comme le serpent. L’objectif du jeu est de permettre au serpent de manger toutes les pommes présentes sur le plateau, sans heurter les obstacles, ce qui entraînerait la fin de la partie.                            
                             </p>
                         </div>
 
                         <div>
-                            <h4>Skills acquis</h4>
+                            <h4>Skills développé</h4>
                             <div>
-                                <p>AUTONOMIE</p>
+                                <p>TRAVAIL EN ÉQUIPE</p>
                                 <p>GESTION DU TEMPS</p>
-                                <p>RIGUEUR</p>
-                                <p>ANALYSE D'ÉRREUR</p>
+                                <p>PENSÉE LOGIQUE</p>
+                                <p>RÉSOLUTION DE PROBLÈMES</p>
                             </div>
                             
                         </div>
@@ -63,29 +65,32 @@
 
                 <div>
                     <h4>Déroulement</h4>
-                    <p>Le développement du jeu de Snake a été découpé en 4 partie distincts.</p>
+                    <p>Le développement du jeu de Snake autonome a été découpé en 4 partie distincts.</p>
                     <div>
                         <div>
                             <h5><img src="../images/calendrier.png" alt="">Semaine 1</h5>
-                            <p>Création du serpent modéliser par des caractères et déplacement rectiligne</p>
+                            <p>Le serpent se déplace de façon autonome et se dirige vers la pomme la plus proche de lui jusqu'à toutes les manger
+                                Mais petite subtilité il a le droit de faire demi-tour sur lui même
+                            </p>
                         </div>
 
                         <div>
                             <h5><img src="../images/calendrier.png" alt="">Semaine 2</h5>
-                            <p>L'utilisateur peut désormais choisir le direction du serpent</p>
+                            <p>Le serpent n'a plus le droit de faire demi tour sur lui même et des téléporteur sont implémenter dans les parois du plateau
+                                Le serpent doit donc en tenir compte pour prendre le plus court chemin
+                            </p>
                         </div>
 
                         <div>
                             <h5><img src="../images/calendrier.png" alt="">Semaine 3</h5>
-                            <p>Le serpent est placer au sein d'un plateau de jeu modéliser par des caractères. Toucher un mur met fin à la partie</p>
+                            <p>Le plateau comprend maintenant des pavé qui agissent comme des murs, le serpent doit s'adapter à son nouveau terrain de jeu</p>
                         </div>
 
                         <div>
                             <h5><img src="../images/calendrier.png" alt="">Semaine 4</h5>
-                            <p>Ajout d'obstacle qui agissent comme des mûrs et ajout de téléporteurs dans les parois du plateau qui transporte le serpent à l'opposer du plateau</p>
+                            <p>Maintenant que le jeu est complet, ajoutons un second serpent à la partie, les deux serpent ne peuvent pas entrer en collision et doivent chacun se rendre à la pomme la plus proche d'eux</p>
                         </div>
                     </div>
-                    <p>En parallèle du développement nous avons réaliser un cahier de test tout au long du projet.</p>
                 </div>
                     
                 <hr>
@@ -95,13 +100,12 @@
                     <div>
                         <!-- TODO - Mettre une couleur par rapport au logiciel utilisé -->
                         <div><img src="../images/c_language.png" alt="">Language C</div>
-                        <div><img src="../images/google_sheet.webp" alt="">Google Sheet</div>
                         <div><img src="../images/xfce.webp" alt="">Terminal Linux</div>
                     </div>
                 </div>
 
                 <div>
-                    <a href="">Télécharger le <span>Jeu du Snake</span></a>
+                    <a href="">Télécharger le <span>Jeu du Snake autonomne</span></a>
                 </div>
                 
             </article>
@@ -109,13 +113,13 @@
         
 
         <section>
-            <a href="c6.html">
+            <a href="c1.html">
                 <img src="../images/nav_competence_gauche.png" alt="">
-                <p>compétence 6</p>
+                <p>Compétence 1</p>
             </a>
 
-            <a href="c2.html">
-                <p>compétence 2</p>
+            <a href="c3.html">
+                <p>Compétence 3</p>
                 <img src="../images/nav_competence_droite.png" alt="">
             </a>
             
