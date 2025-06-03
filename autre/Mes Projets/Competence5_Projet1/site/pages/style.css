@@ -1,0 +1,3505 @@
+body {
+    background-color: #E4E4E4;
+    margin: 0;
+}
+
+@media all and (max-width: 429px){
+
+    body {
+        overflow-x: hidden;
+    }
+    
+}
+
+
+h1 {
+    font-family: "Joti-one";
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Itim';
+    text-align: center;
+}
+
+h2 {
+    font-size: 4.375em;
+    background-image: url(../image/Accueil/)
+}
+
+h3 {
+    font-size: 3.125em;
+}
+
+h4 {
+    font-size: 1.875em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+p {
+    font-family: "Inter";
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*******************************************************************************************************************************/
+/********************************************************* Importation  ********************************************************/
+/*******************************************************************************************************************************/
+@font-face {
+    font-family: 'Joti-one';
+    src: url('../font/Joti-One/jotione-regular-webfont.woff2') format('woff2'),
+        url('../font/joti-one/jotione-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Itim';
+    src: url('../font/Itim/itim-regular-webfont.woff2') format('woff2'),
+        url('../font/Itim/itim-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter/Inter-Regular.woff2') format('woff2'),
+        url('../font/Inter/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*************************************************************************************************************************/
+/********************************************************* Popup *********************************************************/
+/*************************************************************************************************************************/
+
+.overlay-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-popup {
+    display: flex;
+}
+
+.content-popup {
+    max-width: 60%;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+}
+
+.content-popup h2 {
+    font-size: 2em;
+}
+
+.content-popup p {
+    line-height: 1.5;
+}
+
+.content-popup button {
+    border: 0px;
+    background-color: #fff;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    line-height: 0;
+    top: -50px;
+    right: 0;
+    cursor: pointer;
+}
+
+.content-popup button:hover {
+    background-color: #E4E4E4;
+}
+
+.content-popup button:active {
+    box-shadow: inset 0 2px 2px;
+}
+
+/*******************************************************************************************************************************/
+/************************************************************ Header ***********************************************************/
+/*******************************************************************************************************************************/
+
+header {
+    background-color: #004280;
+    box-shadow: #000000 0 1px 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+header>img {
+    height: 5em;
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header li img {
+    height: 2em;
+    width: auto;
+    padding-right: 0.5em;
+    align-items: center;
+}
+
+header nav ul li {
+    color: #000000;
+
+    margin: .5em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    text-align: center;
+    list-style-type: none;
+
+    box-shadow: 0px 3px 5px #000000;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    padding: 0.3em;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+header nav li:hover {
+    background-color: #C0C0C0;
+    color: #000000;
+}
+
+header nav li:active {
+    box-shadow: inset 0px 3px 5px #000000;
+    color: #000000;
+}
+
+
+/***************************************************************************************************************************************/
+/************************************************************ Menu telephone ***********************************************************/
+/***************************************************************************************************************************************/
+
+
+.OpenMenuBt {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1100;
+    background: #D9D9D9;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 1.25em;
+    width: 2.5em;
+    height: 2.5em;
+    display: none;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+#phone_nav nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top : 6em
+}
+
+#phone_nav nav li img{
+    height: 2em;
+    width: auto;
+    margin-left: 20px;
+    padding-right: 0.5em;
+}
+
+
+#phone_nav nav li{
+    color: #000000;
+
+    padding: .3em;
+    padding-right: 2em;
+    margin: 0 .5em 0 .5em;
+    margin: 1.5em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    text-align: center;
+    list-style-type: none;
+    
+    box-shadow: 0px 3px 5px #000000;
+    width: 60%;
+}
+
+#phone_nav nav li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#phone_nav nav li:hover{
+    background-color: #c0c0c0;
+    color: #000000;
+}
+
+#phone_nav nav li:active{
+    box-shadow:inset 0px 3px 5px #000000;
+    color: #000000;
+}
+
+#phone_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #004280 65%, #474747 65%);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+
+}
+
+#phone_nav.open {
+    transform: translateY(0);
+}
+
+
+
+/********************************************************************************************************************************************************/
+/************************************************************ Tableaux des médailles par pays ***********************************************************/
+/********************************************************************************************************************************************************/
+
+
+.medal_table {
+    width: 100%;
+    empty-cells: hide;
+    font-size: 25px;
+    border-radius: 0;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+
+.medal_table tr span {
+    display: inline-block;
+    background-color: #E4E4E4;
+    color: black;
+    border-radius: 15px;
+}
+
+
+.medal_table thead th {
+    background-color: black;
+}
+
+.medal_table thead th:nth-child(2) span {
+    width: 80%;
+    text-align: center;
+    margin : 1em;
+}
+
+.medal_table thead th:nth-child(2) {
+    text-align: left;
+}
+
+.medal_table tbody tr:first-child  {
+    background-color: #D6C278;
+}
+
+.medal_table tbody tr > td:last-child, .medal_table thead th:last-child {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.medal_table tbody tr > th, .medal_table thead th:first-child {
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+.medal_table tbody tr:nth-child(2) {
+    background-color: #B4B4B4;
+}
+
+.medal_table tbody tr:nth-child(3) {
+    background-color: #856D4D;
+}
+
+.medal_table tbody tr:nth-child(4) {
+    background-color: #474747;
+
+}
+
+
+.medal_table tbody tr:last-child  {
+    background-color: #474747;
+}
+
+.medal_table th, .medal_table td {
+
+    text-align: center;
+}
+
+
+@media all and (max-width: 429px) {
+
+    .medal_table {
+        font-size: 15px;
+        border-spacing: 0 10px;
+    }
+
+
+    .medal_table img {
+        width: auto;
+        height: 25px;
+        border-radius: 15px;
+    }
+    
+    
+    .medal_table td:nth-child(3) span {
+        width: 100px;
+    }
+
+    .medal_table td span:not(.medal_table td:nth-child(3) span){
+        width: 25px;
+    }
+    
+    .medal_table th span, .medal_table tbody th:first-child {
+        width: 25px;
+    }
+
+    .medal_table thead th:last-child span {
+        width: 50px;
+    }
+
+    .medal_table tbody th span, .medal_table tbody th:first-child {
+        margin: 0 0.5em;
+    }
+}
+
+
+@media all and (min-width: 1050px) {
+
+    .medal_table img {
+        width: auto;
+        height: 60px;
+        border-radius: 15px;
+    }
+    
+    
+    .medal_table td:nth-child(3) span {
+        width: 200px;
+        
+    }
+
+
+    .medal_table td span:not(.medal_table td:nth-child(3) span){
+        width: 50px;
+    }
+    
+    .medal_table th span, .medal_table tbody th:first-child {
+        width: 50px;
+    }
+
+
+    .medal_table thead th:last-child span {
+        width: 100px;
+    }
+
+    
+    .medal_table tbody th span, .medal_table tbody th:first-child {
+        margin: 0 1em;
+    }
+}
+
+
+
+/*****************************************************************************************************************************************/
+/************************************************************ Titre de la page ***********************************************************/
+/*****************************************************************************************************************************************/
+
+
+/********************************/
+/***** HAUT DE PAGE ACCUEIL *****/
+/********************************/
+
+/*Mise en forme du titre H1 en haut de la page*/
+.body-accueil h1 {
+
+    height: 5em;
+    padding-top: 1em;
+    text-align: center;
+    font-size: 6em;
+    margin: 0;
+
+}
+
+/*Fond derrière le titre H1 de la page d'accueil*/
+#titre-accueil {
+
+    background-image: url(../images/Accueil/top-page.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #1A2A6C
+}
+
+
+/********************************/
+/***** HAUT DE PAGE EPREUVE *****/
+/********************************/
+
+.sportif h1 {
+    background-image: url(../images/Sportif/image-sportif.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Joti-one";
+    color: #1A2A6C;
+    height: 5em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 1em;
+    font-size: 6.25em;
+    text-align: center;
+    margin: 0;
+}
+
+/********************************/
+/***** HAUT DE PAGE EPREUVE *****/
+/********************************/
+
+#epreuve h1 {
+    background-image: url("../images/Epreuve/titre-epreuve.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Joti-one";
+    color: #1A2A6C;
+    height: 500px;
+    padding-top: 1em;
+    font-size: 6.25em;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+/********************************/
+/**** HAUT DE PAGE LES SPORTS ***/
+/********************************/
+
+#titre-les-sports{
+    height: 5em;
+    background-image: url(../images/sports/fond-page-sport.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+}
+
+#titre-les-sports span{
+    background: rgba(255,255,255, .5);
+    border-radius: 20px
+
+}
+
+
+
+/********************************/
+/***** HAUT DE PAGE FLAMME ******/
+/********************************/
+
+#titre-parcours{
+    background-image: url(../images/relais/fond-parcours-flamme.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFD700;
+}
+
+
+
+/*****************************************/
+/***** HAUT DE PAGE qui sommes nous ******/
+/*****************************************/
+
+#a_propos h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/qui-somme-nous/qui-sommes-nous-top.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center;
+}
+
+
+
+/************************************/
+/***** HAUT DE PAGE discipline ******/
+/************************************/
+
+.discipline > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/discipline/image_pattern/img_pattern_header.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: top;
+    height: 500px;
+}
+
+#natation > div:nth-child(3) {
+    background-image: url("../images/discipline/fond.jpg");
+}
+
+
+*
+/*****************************************/
+/***** HAUT DE PAGE qui sommes nous ******/
+/*****************************************/
+
+#a_propos header div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Image/qui-somme-nous/qui_sommes_nous_top.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center;
+
+}
+
+
+
+
+/*
+#############################################################################################
+#############################################################################################
+###                                                                                       ###
+###                #####    #####    #####   ##    ##  #######  #######  ##               ###
+###               #######  #######  #######  ##    ##  #######  #######  ##               ###
+###               ##   ##  ##       ##       ##    ##  ##         ###    ##               ###
+###               #######  ##       ##       ##    ##  #####      ###    ##               ###
+###               #######  ##       ##       ##    ##  ##         ###    ##               ###
+###               ##   ##  #######  #######  ########  #######  #######  #######          ###
+###               ##   ##   #####    #####    ######   #######  #######  #######          ###
+###                                                                                       ###
+#############################################################################################
+#############################################################################################
+*/
+/******************************************************************************************************************************************/
+/***************************************************** ACCUEIL : Sites Emblématiques ******************************************************/
+/******************************************************************************************************************************************/
+/*
+/*Fond dégradé sur le titre H2 "PONT ALEXANDRE III" pour le contraste avec le fond*/
+#accueil section:nth-child(2) article:last-child h3 span {
+    background: linear-gradient(to bottom,rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, .1) 100%);
+}
+
+#accueil section:nth-child(2)>div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*1 article = une colonne contenant un site emblématique*/
+#accueil section:nth-child(2) article {
+    flex: 1;
+    flex-basis: 1em;
+    height: 42em;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+
+}
+
+#accueil section:nth-child(2) figure{
+    display: flex;
+    justify-content: center;
+}
+
+#accueil section:nth-child(2)>div img {
+    padding: .1em;
+    background-color: #AAAAAA;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px 2px #000;
+    width: 3em;
+    position: relative;
+    top: 45px;
+    margin: 0 1em;
+
+}
+
+
+/*Grand Palais*/
+#accueil section:nth-child(2) article:nth-child(1) {
+
+    background-image: url(../images/Accueil/sites/grand-palais-jo.jpg);
+    background-position: center;
+    color: #15191E;
+    flex-shrink: 1;
+    order: 1;
+
+}
+
+
+/*Teahupo'o*/
+#accueil section:nth-child(2) article:nth-child(2) {
+
+    background-image: url(../images/Accueil/sites/tahiti.jpg);
+    background-position: 80%;
+    color: #15191E;
+    flex-shrink: 1;
+    order: 1;
+
+
+}
+
+/*Stade Tour Eiffel*/
+#accueil section:nth-child(2) article:nth-child(3) {
+
+    background-image: url(../images/Accueil/sites/stade-te.jpg);
+    background-position: center;
+    color: #ffffff;
+    flex-shrink: 1;
+    order: 1;
+
+
+}
+
+/*Champs-de-Mars*/
+#accueil section:nth-child(2) article:nth-child(4) {
+
+    background-image: url(../images/Accueil/sites/champs-de-mars.jpg);
+    background-position: center;
+    color: #ffffff;
+    flex-shrink: 1;
+    order: 1;
+
+}
+
+/*Stade de France*/
+#accueil section:nth-child(2) article:nth-child(5) {
+
+    background-image: url(../images/Accueil/sites/stade-de-france.jpg);
+    background-position: 40% 80%;
+    color: #000000;
+    flex-shrink: 1;
+    order: 1;
+
+}
+
+/*Pont Alexandre III*/
+#accueil section:nth-child(2) article:nth-child(6) {
+
+    background-image: url(../images/Accueil/sites/pont-alexandre.jpg);
+    background-position: 60%;
+    color: #000000;
+    flex-shrink: 1;
+    order: 1;
+
+}
+
+
+
+/****************************************************************************************************************************************/
+/***************************************************** ACCUEIL : Qui sommes nous ? ******************************************************/
+/****************************************************************************************************************************************/
+
+#accueil section:nth-child(3) figure {
+    position: relative;
+    width: 100%;
+    max-width: 60%;
+    /* Limite la taille du fond a 600px de large maximum */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#accueil section:nth-child(3) figure img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* S'assure que l'image est bien cadrée */
+}
+
+#accueil section:nth-child(3) figure figcaption {
+    position: absolute;
+    bottom: 10px;
+    /* Place le bouton à 10px du bas */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+#accueil section:nth-child(3) p {
+    background-color: #FDDEFF;
+    color: #000000;
+    padding: .5em;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0px 3px 5px #000000;
+    width: 50%;
+}
+
+#accueil section:nth-child(3) p:hover {
+    background-color: #FCC8FF;
+}
+
+#accueil section:nth-child(3) p:active {
+    background-color: #FCC8FF;
+    box-shadow: inset 0px 3px 5px #000000;
+
+}
+
+/****************************************************************************************************************************************/
+/******************************************************* ACCUEIL : Chiffres clés ********************************************************/
+/****************************************************************************************************************************************/
+
+#accueil section:nth-child(4)>h4 {
+    text-align: center;
+}
+
+#accueil section:nth-child(4)>div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#accueil section:nth-child(4)>div>article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 20%;
+
+    box-shadow: #000000 0 3px 5px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+
+    padding: 10px;
+    margin: 1em;
+}
+
+#accueil section:nth-child(4)>div>article>figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#accueil section:nth-child(4)>div>article>figure>img {
+    height: 5em;
+    width: 5em;
+    object-fit: cover;
+    border-radius: 100px;
+
+    display: flex;
+    margin: 10px;
+}
+
+
+/****************************************************************************************************************************************/
+/***************************************************** ACCUEIL : Les grands moments *****************************************************/
+/****************************************************************************************************************************************/
+
+#accueil section:nth-child(5) div,
+.les-sports section div {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 1em;
+    flex-wrap: wrap;
+}
+
+#accueil section:nth-child(5) div h5,
+.les-sports section div h5 {
+    text-align: center;
+    margin-top: 1em;
+    width: 70%;
+    font-size: 1.2em;
+}
+
+#accueil section:nth-child(5) article,
+.les-sports section article {
+    background-color: #D9D9D9;
+    box-shadow: #000000 0 3px 5px;
+
+    border-radius: 15px 15px 50px 50px;
+    flex-basis: 18%;
+    margin: 1em;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#accueil section:nth-child(5) p,
+.les-sports section p {
+
+    background-color: #C5C5C5;
+    box-shadow: #000000 0 3px 2px;
+    border-radius: 15px 15px 30px 30px;
+    height: 2em;
+    margin: 1em;
+    padding: 0 1em;
+    text-align: center;
+    padding: .5em;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil section:nth-child(5) p:hover,
+.les-sports section p:hover {
+    background-color: #B4B4B4;
+}
+
+#accueil section:nth-child(5) p:active,
+.les-sports section p:active {
+    box-shadow: inset #000000 0 3px 2px;
+}
+
+#accueil section:nth-child(5) article div,
+.les-sports section article div {
+    box-shadow: inset #000000 0 3px 5px;
+    border-radius: 15px;
+    width: 10em;
+    height: 13em;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/*Media Querries de la page d'accueil*/
+@media all and (max-width:428px){
+    
+    h2{
+        font-size: 2em;
+    }
+
+    h3{
+        font-size: 1.8em;
+    }
+
+    h4{
+        font-size: 1em;
+    }
+
+    /*Titre de la page d'accueil*/
+    #titre-accueil{
+        font-size: 1em;
+        padding: .5em;
+    }
+
+    #titre-parcours{
+        font-size: 4em;
+    }
+
+    #accueil section:nth-child(6) h4{
+        font-size: 1em;
+    }
+    #accueil section:nth-child(6) p{
+        font-size: .5em;
+    }
+
+
+}
+
+@media all and (max-width: 650px){
+    #accueil section:nth-child(3) p{
+        font-size: .8em;
+    }
+
+    #titre-accueil{
+        font-size: 4em;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+
+    h3{
+        font-size: 2.4em;
+    }
+
+    h4{
+        font-size: 1.4em;
+    }
+
+
+}
+
+@media all and (max-width: 750px){
+
+    #accueil section:nth-child(3) p{
+        font-size: 1em;
+    }
+
+    #accueil section:nth-child(4) h3{
+        font-size: 1em;
+    }
+
+    #accueil section:nth-child(4)>div p{
+        font-size: .5em;
+    }
+
+    #accueil section:nth-child(4)>div>article>div>img{
+        height: 2.5em;
+        width: 2.5em;
+    }
+}
+
+@media all and (max-width: 880px){
+
+
+    #accueil section:nth-child(3) p{
+        font-size: 1.3em;
+    }
+
+    #accueil section:nth-child(4) h3{
+        font-size: 1.4em;
+    }
+
+    #accueil section:nth-child(4)>div p{
+        font-size: .8em;
+    }
+
+    #accueil section:nth-child(4)>div>article>div>img{
+        height: 3.5em;
+        width: 3.5em;
+    }
+
+    #accueil section:nth-child(5) p, .les-sports section p{
+        font-size: .5em;
+    }
+
+    #accueil section:nth-child(5) div h5, .les-sports section div h5 {
+        font-size: .8em;
+    }
+
+    #accueil section:nth-child(6) article{
+        width: 80%;
+    }
+    
+}
+
+
+#img-relais {
+    background-image: url(../images/Accueil/grand-moment/relais-flamme.jpg);
+    background-position: center;
+
+}
+
+#img-ceremonie {
+    background-image: url(../images/Accueil/grand-moment/ceremonie-ouverture.jpg);
+    background-position: center;
+
+}
+
+#img-nv-sport {
+    background-image: url(../images/Accueil/grand-moment/nouveau-sport.jpg);
+    background-position: 100%;
+
+}
+
+/****************************************************************************************************************************************/
+/**************************************************** ACCUEIL : Les exploits sportif ****************************************************/
+/****************************************************************************************************************************************/
+
+
+#accueil section:nth-child(6) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#accueil section:nth-child(6) article {
+    background-color: #D9D9D9;
+    margin: 1em;
+    padding: 1em;
+    width: 50%;
+    height: auto;
+    display: flex;
+
+    border-radius: 30px;
+
+
+    /*Image en haut à droite (logo JO)*/
+    background-image: url(../images/Accueil/exploit-sportif/olympique.png);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: top 1% right 3%;
+
+}
+
+#accueil section:nth-child(6) article img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#accueil section:nth-child(6) article div {
+    margin-left: 1em;
+}
+
+
+/****************************************************************************************************************************************/
+/*************************************************** ACCUEIL : Moments phare crémonie ***************************************************/
+/****************************************************************************************************************************************/
+
+#accueil section:nth-child(7) div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#accueil section:nth-child(7) article {
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    box-shadow: 0 5px 5px;
+    margin: 2em;
+    padding: 0 1em;
+    border-radius: 30px;
+}
+
+#accueil section:nth-child(7) article:hover {
+    background-color: #C5C5C5C5;
+}
+
+#accueil section:nth-child(7) article:active {
+    box-shadow: inset 0 5px 5px;
+}
+
+#accueil section:nth-child(7) img {
+    width: 80%;
+    max-width: 12em;
+    height: auto;
+    object-fit: cover;
+    margin-right: 1em;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+@media all and (max-width:880px){
+    #accueil section:nth-child(7) article img{
+        display: none;
+    }
+}
+
+/****************************************************************************************************************************************/
+/***************************************************** ACCUEIL : Tableau Olympiques *****************************************************/
+/****************************************************************************************************************************************/
+
+#accueil section:nth-child(8) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#accueil table {
+    width: 80%;
+    empty-cells: hide;
+    font-size: 25px;
+    border-radius: 0;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+
+#accueil table tr span {
+    display: inline-block;
+    background-color: #E4E4E4;
+    color: black;
+    border-radius: 15px;
+}
+
+
+#accueil table thead th {
+    background-color: black;
+}
+
+#accueil table thead th:nth-child(2) span {
+    width: 80%;
+    text-align: center;
+    margin: 1em;
+}
+
+#accueil table thead th:nth-child(2) {
+    text-align: left;
+}
+
+#accueil table tbody tr:first-child {
+    background-color: #D6C278;
+}
+
+#accueil table tbody tr>td:last-child,
+#accueil table thead th:last-child {
+    border-radius: 0px 20px 20px 0px;
+}
+
+#accueil table tbody tr>th,
+#accueil table thead th:first-child {
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+#accueil table tbody tr:nth-child(2) {
+    background-color: #B4B4B4;
+}
+
+#accueil table tbody tr:nth-child(3) {
+    background-color: #856D4D;
+}
+
+#accueil table tbody tr:nth-child(4) {
+    background-color: #474747;
+
+}
+
+
+#accueil table tbody tr:last-child {
+    background-color: #474747;
+}
+
+#accueil table th,
+#accueil table td {
+
+    text-align: center;
+}
+
+/*Media Querries des tableaux de medailles (par Ywan)*/
+@media all and (max-width: 430px) {
+    #accueil table {
+        font-size: 15px;
+        border-spacing: 0 10px;
+    }
+
+
+    #accueil table img {
+        width: auto;
+        height: 25px;
+        border-radius: 15px;
+    }
+
+
+    #accueil table td:nth-child(3) span {
+        width: 100px;
+    }
+
+    #accueil table td span:not(#accueil table td:nth-child(3) span) {
+        width: 25px;
+    }
+
+    #accueil table th span,
+    #accueil table tbody th:first-child {
+        width: 25px;
+    }
+
+    #accueil table thead th:last-child span {
+        width: 50px;
+    }
+
+    #accueil table tbody th span,
+    #accueil table tbody th:first-child {
+        margin: 0 0.5em;
+    }
+}
+
+@media all and (max-width: 1049px) and (min-width: 431px) {
+
+    #accueil table img {
+        width: auto;
+        height: 60px;
+        border-radius: 15px;
+    }
+
+
+    #accueil table td:nth-child(3) span {
+        width: 200px;
+
+    }
+
+
+    #accueil table td span:not(#accueil table td:nth-child(3) span) {
+        width: 50px;
+    }
+
+    #accueil table th span,
+    #accueil table tbody th:first-child {
+        width: 50px;
+    }
+
+
+    #accueil table thead th:last-child span {
+        width: 100px;
+    }
+
+
+    #accueil table tbody th span,
+    #accueil table tbody th:first-child {
+        margin: 0 1em;
+    }
+}
+
+@media all and (min-width: 1050px) {
+    #accueil table img {
+        width: auto;
+        height: 60px;
+        border-radius: 15px;
+    }
+
+
+    #accueil table td:nth-child(3) span {
+        width: 200px;
+
+    }
+
+
+    #accueil table td span:not(#accueil table td:nth-child(3) span) {
+        width: 50px;
+    }
+
+    #accueil table th span,
+    #accueil table tbody th:first-child {
+        width: 50px;
+    }
+
+
+    #accueil table thead th:last-child span {
+        width: 100px;
+    }
+
+
+    #accueil table tbody th span,
+    #accueil table tbody th:first-child {
+        margin: 0 1em;
+    }
+}
+
+/****************************************************************************************************************************************/
+/********************************************************** ACCUEIL : Sponsors **********************************************************/
+/****************************************************************************************************************************************/
+
+.sponsor img {
+    height: 5em;
+    width: auto;
+    margin: 2em;
+}
+
+.sponsor div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+/*
+#################################################################################################################
+#################################################################################################################
+####                                                                                                         ###
+####                          #######   #####    #####   #########  ######  ######                           ###
+####                          #######  #######  #######  #########  ######  #######                          ###
+####                          ##       ##   ##  ##   ##     ###     ##      ##   ##                          ###
+####                          #####    ##   ##  ##   ##     ###     #####   ######                           ###
+####                          #####    ##   ##  ##   ##     ###     ##      ##  ##                           ###
+####                          ##       #######  #######     ###     ######  ##   ##                          ###
+####                          ##        #####    #####      ###     ######  ##   ##                          ###
+####                                                                                                         ###
+#################################################################################################################
+#################################################################################################################
+*/
+
+
+
+footer {
+    font-family: "Inter";
+    background-color: #282d32;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+
+}
+
+footer div:first-child {
+    display: flex;
+    margin: 0;
+}
+
+footer div:first-child div:first-child {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    
+}
+
+footer div:first-child div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+}
+
+footer div:first-child div:last-child div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+
+}
+
+footer img {
+    width: 5em;
+
+}
+
+footer div:first-child div:last-child div img {
+    padding-right: 1em;
+
+}
+
+footer > div:last-of-type{
+    background-color: #1c1f23;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer div:first-child p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+footer div:first-child p img {
+    padding: 1em;
+}
+
+footer div:first-child div:first-child nav img {
+    width: 90%;
+}
+
+footer div:first-child div:first-child nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:active {
+    color: #e4e4e4;
+}
+
+footer div:first-child div {
+    width: 33%;
+    text-align: center;
+    padding: 1em;
+
+}
+
+footer li {
+    list-style: none;
+}
+/*MQ du Footer (Paolo)*/
+@media all and (max-width:850px) {
+
+    footer {
+        font-size: 12px;
+    }
+    
+}
+
+@media all and (max-width:675px) {
+
+    footer {
+        font-size: 9px;
+    }
+
+}
+
+@media all and (max-width:500px) {
+
+    footer {
+        font-size: 8px;
+    }
+    
+}
+
+@media all and (max-width:428px) {
+
+    footer {
+        font-size: 7px;
+    }
+
+}
+
+
+
+
+/*
+#################################################################################################################
+#################################################################################################################
+####                                                                                                         ####
+####        ######   #######   #####    #####   #######  ######   ##       #######  ####  ##  #######        ####
+####        #######  #######  #######  #######  #######  #######  ##       #######  ####  ##  #######        ####
+####        ###  ##    ###    ####     ##         ###    ##   ##  ##         ###    ## ## ##  ##             ####
+####        ###  ##    ###      ####   ##         ###    ##   ##  ##         ###    ## ## ##  #####          ####
+####        ###  ##    ###       ####  ##         ###    ######   ##         ###    ## ## ##  ##             ####
+####        #######  #######  #######  #######  #######  ##       #######  #######  ##  ####  #######        ####
+####        ######   #######   #####    #####   #######  ##       #######  #######  ##  ####  #######        ####
+####                                                                                                         ####
+#################################################################################################################
+#################################################################################################################
+*/
+
+
+.discipline main{
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+
+.discipline main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    align-items: center;
+}
+
+
+.discipline main article {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.discipline main section:first-child > article img, .discipline main section:nth-child(3) > article img {
+    width: 50vw;
+    max-width: 700px;
+}
+
+.discipline main section:nth-child(3) > article p {
+    max-width: 90vw;
+}
+
+
+.discipline main section:first-child > article figcaption {
+    margin: 1em;
+}
+
+.discipline main section:nth-child(2) table th, .discipline main section:nth-child(2) table td {
+    background-color: #7B7272;
+    color : white;
+    font-size: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.discipline main section:nth-child(2) article {
+    flex-direction: column;
+}
+
+.discipline main section:nth-child(2) table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    empty-cells: hide;
+}
+
+.discipline main section:nth-child(1) table tr {
+    margin: 1em;
+}
+
+.discipline main section:nth-child(2) a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 1em;
+}
+
+
+.discipline main section:nth-child(4) {
+    background-color : #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border-radius: 20px;
+    margin-top: 5em
+}
+
+
+
+.discipline main section:last-child > article {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.discipline .sportif_bt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: #D9D9D9;
+    box-shadow: 2px 6px 4px gray;
+}
+
+
+.discipline .sportif_bt:hover {
+    background-color: #C5C5C5;
+}
+
+
+.discipline .sportif_bt:active {
+    box-shadow: 2px 6px 4px gray inset;
+}
+
+.discipline main section:last-child > article > div > div{
+    background-image: url("../images/discipline/image_pattern/utilisateur.png");
+}
+
+
+#natation header div:last-child {
+    background-image: url("../images/discipline/fond.jpg");
+}
+
+
+#natation main section:last-child > article > a:first-child > div > div{
+    background-image: url("../images/discipline/selection-sportif/Leon-Marchand.jpg");
+}
+
+#natation main section:last-child > article > a:nth-child(2) > div > div{
+    background-image: url("../images/discipline/selection-sportif/Summer-McIntosh.jpg");
+}
+
+#natation main section:last-child > article > a:nth-child(3) > div > div{
+    background-image: url("../images/discipline/selection-sportif/Kate-Douglass.jpg");
+}
+
+#natation main section:last-child > article > a:last-child > div > div{
+    background-image: url("../images/discipline/selection-sportif/XuJiagu.jpg");
+}
+
+
+
+
+
+@media all and (max-width: 429px) {
+
+    .discipline h1 {
+        font-size: 2em;
+    }
+
+    .discipline h2 {
+        font-size: 1.625em;
+    }
+
+    .discipline p  {
+        font-size: 15px;
+    }
+
+
+    .discipline main {
+        margin: 0.5em;
+
+    }
+
+    .discipline > div:nth-child(3) {
+        height: 150px;
+    }
+
+    .discipline header nav {
+        display: none;
+    }
+
+
+    /* --------------------- page discipline --------------------- */
+
+
+    .discipline main section:nth-child(2) > article figure {
+        display: none;
+    }
+
+
+    .discipline main section:nth-child(3) > article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .discipline main section:nth-child(3) > article img {
+        width: 80vw;
+    }
+
+    .discipline main section:nth-child(4) {
+        padding: 0.5em;
+        width: 95%;
+    }
+
+    .discipline main section:last-child p {
+        width: 200px;
+        margin-right: 1em;
+    } 
+
+    .discipline .sportif_bt div {
+        height: 100px;
+        width: 75px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        margin : 0em 1em;
+    }
+
+    .discipline header div:last-child > img {
+        width: 3em;
+        background-color: transparent;
+        margin: 0.5em;
+    }
+
+
+    .discipline main section:nth-child(2) > article {
+        background-color: #D9D9D9;
+        padding: 0.5em;
+        border-radius: 20px;
+        width: 385px;
+    }
+
+    .discipline main section:nth-child(2) table th, .discipline main section:nth-child(2) table td {
+        font-size: 15px;
+        border-radius: 10px;
+    }
+}
+
+
+@media all and (max-width: 1049px) and (min-width: 431px){
+
+
+    .discipline p  {
+        font-size: 20px;
+    }
+
+    .discipline h2 {
+        font-size: 2.4em;
+    }
+
+    .discipline h1 {
+        font-size: 4em;
+    }
+
+    .discipline .OpenMenuBt {
+        display: block;
+    }
+
+    .discipline header nav {
+        display: none;
+    }
+
+    .discipline footer section:nth-child(2) article:nth-child(2) nav img{
+        width: auto;
+    }
+
+    .discipline header div:last-child > img {
+        width: 6.5em;
+        background-color: transparent;
+        margin: 1em;
+    }
+
+    .discipline main section:nth-child(2) > article {
+        width: 85vw;
+    }
+
+    .discipline main section:last-child p {
+        width: 390px;
+        margin-right: 1em;
+    } 
+
+    .discipline .sportif_bt div {
+        height: 100px;
+        width: 150px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        margin : 0em 1em;
+    }
+
+
+    .medal_table img {
+        width: auto;
+        height: 60px;
+        border-radius: 15px;
+    }
+    
+    
+    .medal_table td:nth-child(3) span {
+        width: 200px;
+        
+    }
+
+
+    .medal_table td span:not(.medal_table td:nth-child(3) span){
+        width: 50px;
+    }
+    
+    .medal_table th span, .medal_table tbody th:first-child {
+        width: 50px;
+    }
+
+
+    .medal_table thead th:last-child span {
+        width: 100px;
+    }
+
+    
+    .medal_table tbody th span, .medal_table tbody th:first-child {
+        margin: 0 1em;
+    }
+}
+
+
+@media all and (min-width: 1050px) {
+
+    .discipline .OpenMenuBt {
+        display: none;
+    }
+
+    .discipline p  {
+        font-size: 25px;
+    }
+
+    .discipline h2 {
+        font-size: 3.25em;
+    }
+
+    .discipline h1 {
+        font-size: 6.25em;
+    }
+
+
+    /* --------------------- qui sommes-nous --------------------- */
+
+
+    #a_propos main section article {
+        flex-direction: row;
+        margin : 2em auto;
+    }
+
+
+    #a_propos main section article img {
+        width: 50%;
+        max-width: 500px;
+        border-radius: 20px;
+        margin: auto 1em;
+    }
+
+    #a_propos section:nth-child(2) article:last-child img {
+        display: block;
+    }
+
+
+    /* --------------------- page discipline --------------------- */
+
+
+    .discipline main section:last-child p {
+        width: 390px;
+        margin-right: 1em;
+    } 
+
+    .discipline .sportif_bt div {
+        height: 100px;
+        width: 150px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        margin : 0em 1em;
+    }
+
+    .discipline header div:last-child > img {
+        width: 10em;
+        background-color: transparent;
+        margin: 1em;
+    }
+
+
+    .discipline main section:nth-child(2) > article {
+        background-color: #D9D9D9;
+        padding: 1em;
+        border-radius: 20px;
+        width: 85vw;
+    }
+
+
+    /* --------------------- tab medal/pays --------------------- */
+
+
+    .medal_table img {
+        width: auto;
+        height: 60px;
+        border-radius: 15px;
+    }
+    
+    
+    .medal_table td:nth-child(3) span {
+        width: 200px;
+        
+    }
+
+
+    .medal_table td span:not(.medal_table td:nth-child(3) span){
+        width: 50px;
+    }
+    
+    .medal_table th span, .medal_table tbody th:first-child {
+        width: 50px;
+    }
+
+
+    .medal_table thead th:last-child span {
+        width: 100px;
+    }
+
+    
+    .medal_table tbody th span, .medal_table tbody th:first-child {
+        margin: 0 1em;
+    }
+}
+
+/*
+#################################################################################################################
+#################################################################################################################
+###                                                                                                           ###
+###                       #######  ######   ######    #######  ##     ##   ##   ##  #######                   ###
+###                       #######  #######  #######   #######  ##     ##   ##   ##  #######                   ###
+###                       ##       ##   ##  ##   ##   ##       ##     ##   ##   ##  ##                        ###
+###                       #####    ##   ##  ######    #####    ##     ##   ##   ##  #####                     ###
+###                       ##       ######   ##   ##   ##       ##     ##    ## ##   ##                        ###
+###                       #######  ##       ##    ##  #######  #########    #####   #######                   ###
+###                       #######  ##       ##    ##  #######   #######      ###    #######                   ###
+###                                                                                                           ###
+#################################################################################################################
+#################################################################################################################
+*/
+
+/*Ewen THÉPOT*/
+
+
+/**********************************************************************************/
+/**********************************Style global************************************/
+/**********************************************************************************/
+/*Style global de la page*/
+#epreuve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Style global des sections*/
+#epreuve > section {
+    margin-bottom: 1em;
+    width: 80%;
+}
+/**********************************************************************************/
+/*****************************Présentation et déroulement**************************/
+/**********************************************************************************/
+/*Style pour les articles de présentation et déroulement de l'épreuve*/
+#epreuve article {
+    text-align: center;
+    width: 80%;
+}
+
+/*Retirer les marges inférieures des titres h2 des 2 premiers articles de présentation*/
+#epreuve article:first-of-type > h2,
+#epreuve > article:nth-of-type(2) > h2 {
+    margin-bottom: 0;
+}
+
+/*Mise en forme du texte et de l'image des articles*/
+#epreuve > article > div {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+/*Taille du conteneur du texte*/
+#epreuve > article > div > p {
+    width: 50%;
+    max-width: 50%;
+    margin: 1em;
+}
+
+/*Taille des images*/
+#epreuve > article > div > img {
+    border-radius: 3em;
+    width: 50%;
+    max-width: 50%;
+}
+
+/*Inversement du coté de l'image avec le texte*/
+#epreuve > article:nth-of-type(2) > div > img {
+    order: -1;
+}
+/**********************************************************************************/
+/**************************************Planning************************************/
+/**********************************************************************************/
+/*Mise en forme du titre du tableau du planning*/
+#epreuve > table > caption {
+    margin: 0;
+    margin-top: 1em; 
+    font-size: 3.125em;
+}
+
+/*Mise en forme globale du tableau*/
+#epreuve > table {
+    width: 80%;
+    background-color: #D4D4D4;
+    border-radius: 1em;
+    padding: 0.5em;
+    font-family: 'Itim';
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+/*Mise en forme des lignes du tableau*/
+#epreuve > table tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    padding: 0.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0.5em;
+    background-color: #7B7272;
+    height: 3em;
+}
+
+/*Taille du texte des entête de colonnes*/
+#epreuve > table th {
+    font-size: 1.5em;
+}
+
+/*Mise en forme des cases du tableau*/
+#epreuve > table td,
+#epreuve > table th {
+    display: flex;
+    align-items: center;
+    background-color: #D4D4D4;
+    width: 50%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 1em;
+    justify-content: center;
+}
+
+/*Fond de la ligne 'entête du tableau*/
+#epreuve > table > thead > tr {
+    background-color: #000000;
+}
+
+/*Taille du texte des lignes du tableau*/
+#epreuve > table > tbody > tr {
+    font-size: 1em;
+}
+
+/*Couleur de la ligne de la finale*/
+#epreuve > table > tbody > tr:last-of-type {
+    background-color: #D6C278;
+}
+/**********************************************************************************/
+/**************************************Résultats***********************************/
+/**********************************************************************************/
+/*Mise en forme globale de la section des résultats*/
+#epreuve > section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    align-items: center;
+}
+
+/*Taille du titre de la section Résultats*/
+#epreuve > section:first-of-type h2 {
+    margin: 0;
+}
+
+/*Mise en forme globale des tableaux de résultats*/
+#epreuve > section > table {
+    margin: auto;
+    margin-top: 2em;
+    width: 80%;
+    background-color: #7B7272;
+    border-radius: 1em;
+    font-family: 'Itim';
+    line-height: 2.5em;
+    text-align: center;
+}
+
+/*Taille du tire des tableaux*/
+#epreuve > section > table caption {
+    font-size: 3em;
+}
+
+/*Marge inférieure du dernier tableau de résultats*/
+#epreuve > section > table:last-of-type {
+    margin-bottom: 1em;
+}
+
+/*Mise en forme des lignes des tableaux de résultats*/
+#epreuve > section > table > tbody > tr {
+    display: flex;
+    margin: 0.5em;
+    border-radius: 1em;
+    background-color: #000000;
+    justify-content: space-around;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/*Mise en forme des cases des tableaux*/
+#epreuve > section > table > tbody > tr > td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #D9D9D9;
+    width: 8%;
+    border-radius: 0.75em;
+    line-height: normal;
+    font-size: 0.75em;
+    height: 2.5em;
+    padding: 0;
+}
+
+/*Mise en forme des cases des drapeaux*/
+#epreuve > section > table > tbody > tr > td:nth-of-type(2) {
+    overflow: hidden;
+    width: min-content;
+}
+
+/*Mise en forme des images des drapeaux*/
+#epreuve > section > table > tbody > tr > td:nth-of-type(2) > img {
+    height: 100%;
+}
+
+/*Largeur des cases des noms des athlètes*/
+#epreuve > section > table > tbody > tr > td:nth-of-type(3) {
+    width: 40%;
+}
+
+/*Largeur des cases des chronos des athlètes*/
+#epreuve > section > table > tbody > tr > td:nth-of-type(4) {
+    width: 30%;
+}
+
+/*Couler de la première ligne de chaque tableau (Médaillé d'or)*/
+#epreuve > section > table > tbody > tr:first-of-type {
+    background-color: #D6C278;
+}
+
+/*Couler de la seconde ligne de chaque tableau (Médaillé d'argent)*/
+#epreuve > section > table > tbody > tr:nth-of-type(2) {
+    background-color: #B4B4B4;
+}
+
+/*Couler de la troisième ligne de chaque tableau (Médaillé de bronze)*/
+#epreuve > section > table > tbody > tr:nth-of-type(3) {
+    background-color: #856D4D;
+}
+/**********************************************************************************/
+/**************************************Podium**************************************/
+/**********************************************************************************/
+/*Mise en forme globale de la section du podium*/
+#epreuve section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Mise en forme du conteneur du podium*/
+#epreuve section:nth-of-type(2) > div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 80%;
+}
+
+/*Taille et marge inférieure du titre du podium*/
+#epreuve section:nth-of-type(2) > div > article h4 {
+    margin-bottom: 0;
+    font-size: 1.45em;
+}
+
+/*Mise en forme de chaque marche du podium*/
+#epreuve section:nth-of-type(2) > div > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5em solid #000000;
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
+    max-width: 30%;
+    text-align: center;
+    justify-content: start;
+}
+
+/*Taille et couleur de la première marche du podium*/
+#epreuve section:nth-of-type(2) > div > article:nth-of-type(1) {
+    height: 25em;
+    background-color: #D6C278;
+}
+
+/*Taille, position et couleur de la seconde marche du podium*/
+#epreuve section:nth-of-type(2) > div > article:nth-of-type(2) {
+    order: -1;
+    margin-right: 10%;
+    height: 18.75em;
+    background-color: #D9D9D9;
+}
+
+/*Taille, position et couleur de la troisième marche du podium*/
+#epreuve section:nth-of-type(2) > div > article:nth-of-type(3) {
+    margin-left: 10%;
+    height: 13em;
+    background-color: #856D4D;
+}
+
+/*Taille des drapeaux du podium*/
+#epreuve section:nth-of-type(2) > div > article img {
+    width: 50%;
+    height: auto;
+    border-radius: 20%;
+}
+
+/*Marge du titre de la troisième marche du podium*/
+#epreuve section:nth-of-type(2) > div > article:nth-of-type(3) h4 {
+    margin: 0.5em;
+}
+/**********************************************************************************/
+/**************************************Records Battus ?****************************/
+/**********************************************************************************/
+/*Mise en forme globale de la section records battus*/
+#epreuve section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*Mise en forme de l'article records battus*/
+#epreuve > section:nth-of-type(3) article {
+    background-color: #D9D9D9;
+    padding: 1em;
+    width: 50%;
+    display: flex;
+
+    border-radius: 30px;
+
+    background-image: url(../images/Accueil/exploit-sportif/olympique.png);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: top 1% right 3%;
+
+}
+
+/*Marge inférieur du titre de l'article records battus*/
+#epreuve > section:nth-of-type(3) h4 {
+    margin-bottom: 0;
+}
+
+/*Taille de l'image dans l'article records battus*/
+#epreuve > section:nth-of-type(3) > article > img {
+    width: 30%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+/*Marge gauche des textes de l'article records battus*/
+#epreuve > section:nth-of-type(3) > article > div {
+    margin-left: 1em;
+
+}
+/**********************************************************************************/
+/***************************************Moments Forts******************************/
+/**********************************************************************************/
+/*Mise en forme globale de l'article sur les moments forts*/
+#epreuve > article:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+/*Marges autour du titre de l'article sur les moments forts*/
+#epreuve > article:last-of-type h2 {
+    margin: 0;
+}
+
+/*Mise en forme du conteneurs des moments forts*/
+#epreuve > article:last-of-type > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: center;
+    align-items: baseline;
+}
+
+/*Taille de chaque moment fort*/
+#epreuve > article:last-of-type > div > a {
+    width: 50%;
+}
+
+/*Positionnement des moments forts au sein de leur conteneur*/
+#epreuve > article:last-of-type > div > a > figure {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+/*Alignement du deuxième et dernier moment fort à du coté opposé (à droite) au premier*/
+#epreuve > article:last-of-type > div > a:last-of-type {
+    align-self: flex-end;
+    margin-bottom: 1em;
+}
+
+/*Taille et coins de l'image principale illustrant chaque moment fort*/
+#epreuve > article:last-of-type > div > a > figure > img:first-of-type {
+    width: 100%;
+    border-radius: 1em;
+}
+
+/*Taille et positionnement des boutons Vidéo et photos*/
+#epreuve > article:last-of-type > div > a > figure > img:last-of-type {
+    width: 40%;
+    position: absolute;
+    top: 78%;
+    left: 0;
+}
+
+/*Animation des boutons lorsqu'on les survole*/
+#epreuve > article:last-of-type > div > a > figure > img:last-of-type:hover {
+    top: 73%;
+    width: 45%;
+    transition: all 0.5s ease-in;
+}
+
+/*Alignement des éléments de chaque moment fort au centre de leur conteneur*/
+#epreuve > article:last-of-type > div > a > figure {
+    justify-content: center;
+}
+
+/*Couleur du texte des liens et soulignement (pour les retirer)*/
+#epreuve > article:last-of-type > div > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/*Media Querries*/
+/*Ajustement des éléments pour les écrans en dessous de 1000 pixels de largeur*/
+@media all and (max-width: 1000px){
+    #epreuve body{
+        overflow-x: hidden;
+        font-size: 0.625em;
+    }
+
+    #epreuve h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5em;
+        height: 3em;
+    }
+
+    #epreuve h2 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+    
+    #epreuve h3 {
+        font-size: 2.25em;
+    }
+    
+    #epreuve h4 {
+        font-size: 1.75em;
+    }
+
+    #epreuve p {
+        font-size: 0.75em;
+    }
+
+    #epreuve article {
+        width: 100%;
+    }
+
+    #epreuve article > div {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #epreuve article > div > p {
+        width: 75%;
+        max-width: 100%;
+    }
+
+    #epreuve > article > div > img {
+        order: -1;
+        width: 80%;
+        max-width: 80%;
+    }
+
+    #epreuve > table {
+        width: 98%; 
+    }
+
+    #epreuve > section > table > caption {
+        margin-top: 0.5em;
+        font-size: 2em;
+    }
+
+    #epreuve table thead tr th {
+        padding: 0em;
+        font-size: 1em;
+    }
+
+
+    #epreuve > section > table > tbody > tr > td {
+        border-radius: 1em;
+        padding: 0;
+    }
+
+    #epreuve table td {
+        font-size: 0.75em;
+        height: 2.5em;
+    }
+
+    #epreuve > section {
+        width: 98%;
+    }
+
+    #epreuve section:nth-of-type(2) div {
+        font-size: 70%;
+    }
+
+    #epreuve > section:nth-of-type(3) > article > div {
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+    }
+
+    #epreuve > section:nth-of-type(3) > article > div > p {
+        width: 100%;
+    }
+
+    #epreuve > section:nth-of-type(3) > article > div > h4 {
+        margin-top: 0;
+    }
+
+    #epreuve > article:last-of-type {
+        width: 98%;
+        margin-top: 1em;
+    }
+
+    #epreuve > article:last-of-type div {
+        align-items: center;
+    }
+
+    #epreuve > article:last-of-type > div > a {
+        width: 80%;
+    }
+
+    #epreuve > article:last-of-type > div > a:last-of-type {
+        align-self: auto;
+    }
+
+    #epreuve > article:last-of-type > div > a > figure > img:last-of-type {
+        width: 25%;
+        position: absolute;
+        top: 90%;
+        left: 0;
+    }
+
+    #epreuve > article:last-of-type > div > a > figure > img:last-of-type:hover {
+        top: 80%;
+        width: 35%;
+    }
+}
+
+/*Ajustement des éléments pour les écrans en dessous de 550 pixels de largeur*/
+@media all and (max-width: 550px){
+    #epreuve > section:nth-of-type(3) > article {
+        flex-direction: column;
+        background-size: 15%;
+        background-position: top 1% right 1%;
+        width: 90%;
+    }
+
+    #epreuve > section:nth-of-type(3) > article > img {
+        order: 2;
+        width: 100%;
+    }
+}
+
+/*Ajustement des éléments pour les écrans au dessus de 510 pixels de largeur et en dessous de 1000 pixels de largeur*/
+@media all and (min-width: 510px) and (max-width: 1000px) {
+    #epreuve > section:nth-of-type(3) > article {
+        background-image: none;
+    }
+}
+
+/*Ajustement des éléments pour les écrans au dessus de 550 pixels de largeur et en dessous de 1000 pixels de largeur*/
+@media all and (min-width: 550px) and (max-width: 1000px) {
+    #epreuve section:last-of-type {
+        width: 98%;
+    }
+
+    #epreuve section:last-of-type article {
+        background-image: url("../images/epreuve/record/olympique.png");
+        background-size: 30%;
+        background-position: bottom left 3%;
+        width: 80%;
+    }
+
+    #epreuve > section:nth-of-type(3) > article img {
+        margin-top: 0;
+    }
+
+    #epreuve > section:nth-of-type(3) > article p {
+        padding: 0;
+    }
+
+    #epreuve p {
+        font-size: 1em;
+    }
+}
+
+/*Ajustement des éléments pour les écrans au dessus de 590 pixels de largeur et en dessous de 1000 pixels de largeur*/
+@media all and (min-width: 590px) and (max-width: 1000px) {
+    #epreuve section:last-of-type article {
+        background-image: none;
+    }
+
+    #epreuve section:last-of-type article img {
+        margin: auto;
+    }
+
+}
+
+/*Ajustement des éléments pour les écrans au dessus de 720 pixels de largeur et en dessous de 1000 pixels de largeur*/
+@media all and (min-width: 720px) and (max-width: 1000px) {
+    #epreuve > section:nth-of-type(3) > article {
+        background-image: url("../images/epreuve/record/olympique.png");
+        background-position: top 1% right 3%;
+        background-size: 10%;
+    }
+}
+
+/*Ajustement des éléments pour les écrans au dessus de 825 pixels de largeur et en dessous de 1100 pixels de largeur*/
+@media all and (min-width: 825px) and (max-width: 1100px) {
+    #epreuve section:last-of-type article {
+        background-image: none;
+    }
+
+    #epreuve section:last-of-type article img {
+        margin: auto;
+    }
+
+    #epreuve section:last-of-type div {
+        align-self: center;
+    }
+}
+
+/*Ajustement des éléments pour les écrans au dessus de 1000 pixels de largeur*/
+@media all and (min-width: 1000px) {
+    #epreuve section:last-of-type h4 {
+        margin-top : 0;
+    }
+}
+
+/*Ajustement des éléments pour les écrans au dessus de 1400 pixels de largeur*/
+@media all and (min-width: 1400px) {
+    #epreuve > section:last-of-type article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/*Ajustement des éléments pour les écrans au dessus de 580 et en dessous de 750 pixels de largeur*/
+@media all and (min-width: 580px) and (max-width: 750px) {
+    #epreuve h1 {
+        height: 5em;
+    }
+}
+
+/*Ajustement des éléments pour les écrans au dessus de 750 et en dessous de 1000 pixels de largeur*/
+@media all and (min-width: 750px) and (max-width: 1000px) {
+    #epreuve h1 {
+        height: 6em;
+    }
+}
+
+/*Ajustement des éléments pour les écrans au dessus de 1000 et en dessous de 1500 pixels de largeur*/
+@media all and (min-width: 1000px) and (max-width: 1500px) {
+    #epreuve h1 {
+        height: 2.5em;
+    }
+}
+/*
+#################################################################################################################
+#################################################################################################################
+###                                                                                                           ###
+###                        #####   ######    #####    ######    #########  #######  #######                   ###
+###                       #######  #######  #######   #######   #########  #######  #######                   ###
+###                       ####     ##   ##  ##    ##  ##   ##      ###       ###    ##                        ###
+###                        ####    ##   ##  ##    ##  ######       ###       ###    #####                     ###
+###                          ####  ######   ##    ##  ##   ##      ###       ###    #####                     ###
+###                       #######  ##       ########  ##    ##     ###     #######  ##                        ###
+###                        #####   ##        ######   ##    ##     ###     #######  ##                        ###
+###                                                                                                           ###
+#################################################################################################################
+#################################################################################################################
+*/
+
+/*Paolo*/
+
+
+
+/****************************************************************************************************************************************/
+/******************************************************** SPORTIF : Navigation **********************************************************/
+/****************************************************************************************************************************************/
+
+.sportif nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sportif nav img {
+    border-radius: 360px;
+    width: 90%;
+}
+
+.sportif nav img:hover {
+    border-radius: 360px;
+    width: 95%;
+}
+
+.sportif nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sportif nav a:nth-child(3) {
+    display: none;
+}
+
+.sportif nav a:last-of-type {
+    display: block;
+}
+
+/****************************************************************************************************************************************/
+/********************************************************* SPORTIF : Biographie *********************************************************/
+/****************************************************************************************************************************************/
+
+.sportif article:first-of-type div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sportif article:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5em;
+}
+
+.sportif article:first-of-type img {
+    width: 60%;
+    height: auto;
+}
+
+.sportif article:first-of-type p {
+    font-size: 85%;
+    margin: 2em;
+}
+
+/****************************************************************************************************************************************/
+/********************************************************** SPORTIF : Palmarès **********************************************************/
+/****************************************************************************************************************************************/
+
+.sportif article:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sportif article:nth-of-type(2) div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.sportif table {
+    display: block;
+    border-radius: 20px;
+    padding: 1em;
+    margin-top: 0;
+    border-collapse: separate;
+    text-align: center;
+    background-color: white;
+    font-family: "Itim";
+    border-spacing: 1em 0;
+    width: 90%;
+    font-size: 90%;
+}
+
+.sportif caption {
+    font-family: "Itim";
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.sportif thead {
+    background-color: black;
+    display: block;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+
+.sportif thead th {
+    padding: 0.5em;
+    border-radius: 20px;
+}
+
+.sportif thead tr th:first-child span {
+    width: 60%;
+    height: 4em;
+    padding-top: 3em;
+}
+
+.sportif tr th {
+    font-size: 1.5em;
+}
+
+.sportif tbody {
+    background-color: #7b7272;
+    display: block;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 20px;
+}
+
+.sportif span {
+    display: block;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    padding: 1em;
+}
+
+.sportif tr td {
+    width: 10em;
+    padding: 1em;
+}
+
+.sportif tr td {
+    background-color: #474747;
+    border-radius: 20px;
+}
+
+.sportif tr td:first-child,
+.sportif thead td {
+    background-color: #8d8989;
+}
+
+.sportif .or {
+    background-color: #d6c278;
+    /* Or */
+}
+
+.sportif .argent {
+    background-color: #b4b4b4;
+    /* argent */
+}
+
+.sportif .bronze {
+    background-color: #856d4d;
+    /* Bronze */
+}
+
+.sportif tfoot {
+    background-color: #7b7272;
+    display: block;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+/****************************************************************************************************************************************/
+/******************************************************** SPORTIF : Moment Forts ********************************************************/
+/****************************************************************************************************************************************/
+
+.sportif article:nth-of-type(3) {
+    display: none;
+}
+
+.sportif article:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sportif article:last-child div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sportif article:last-child figure {
+    position: relative;
+}
+
+.sportif article:last-child figure img {
+    height: 20em;
+    width: 30em;
+    border-radius: 100px;
+}
+
+.sportif article:last-child .btn_ytb {
+    width: 11em;
+    height: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+}
+
+.sportif article:last-child figcaption {
+    text-align: center;
+    font-size: 1.875em;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.sportif a {
+    text-decoration: none;
+    color: black;
+}
+
+/****************************************************************************************************************************************/
+/****************************************************************************************************************************************/
+/****************************************************************************************************************************************/
+/********************************************************** ALL : Media Querries ********************************************************/
+/****************************************************************************************************************************************/
+/****************************************************************************************************************************************/
+/****************************************************************************************************************************************/
+
+
+
+@media all and (max-width: 1100px) {
+
+    .sportif nav a:nth-child(3) {
+        display: block ;
+    }
+    
+    .sportif nav a:last-of-type {
+        display: none;
+    }
+
+    .sportif article:first-of-type img {
+        width: 50%;
+        height: auto;
+    }
+    
+    .sportif article:first-of-type p {
+        font-size: 70%;
+        margin: 2em;
+    }
+
+    .sportif table{
+        font-size: 70%;
+    } 
+
+
+    .sportif nav a:last-of-type {
+        display: none;
+    }
+
+    .sportif article:nth-of-type(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2em;
+    }
+
+    .sportif article:last-of-type{
+        display: none;
+    }
+
+    .sportif article:nth-of-type(3) span{
+        display: none;
+    }
+
+    .sportif article:nth-of-type(3) div:first-of-type{
+        height: 400px;
+        width: 800px;
+        position: relative;
+        }
+        
+    .sportif article:nth-of-type(3) .cadre{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        border-radius: 30px;
+    }
+    
+    .sportif article:nth-of-type(3) .lien_youtube {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+    
+    
+    .sportif article:nth-of-type(3) .image_1{
+        z-index: 2;
+        opacity: 1;
+        background-image: url("../images/Sportif/moment-fort/4nages.jpg");
+        background-size:cover;
+    }
+    
+    .sportif article:nth-of-type(3) .image_2{
+        background-image: url("../images/Sportif/moment-fort/200m-papillon.jpg");
+        background-size:cover;
+    }
+    
+    .sportif article:nth-of-type(3) .image_3{
+        background-image: url("../images/Sportif/moment-fort/4nages.jpg");
+        background-size:cover;
+    }
+    
+    .sportif article:nth-of-type(3) .image_4{
+        background-image: url("../images/Sportif/moment-fort/200m-brasse.jpg");
+        background-size:cover;
+    }
+    
+    .sportif article:nth-of-type(3) .image_5{
+        background-image: url("../images/Sportif/moment-fort/podium.jpg");
+        background-size:cover;
+    }
+    
+    
+    .sportif article:nth-of-type(3) .fleche{
+        border: solid #E4E4E4;
+        padding: 12px;
+        border-width:0 5px 5px 0 ;
+    }
+    
+    .sportif article:nth-of-type(3) .precedente, 
+    .sportif article:nth-of-type(3) .suivante{
+        position: absolute;
+        top:50%
+    }
+    
+    .sportif article:nth-of-type(3) .precedente{
+        left: 90%;
+        transform:rotate(-45deg);
+    }
+    
+    .sportif article:nth-of-type(3) .suivante{
+        right: 90%;
+        transform:rotate(135deg);
+    }
+    
+    #image_1:target ~ .image_1, #image_2:target ~ .image_2,
+    #image_3:target ~ .image_3, #image_4:target ~ .image_4,
+    #image_5:target ~ .image_5 {
+        opacity: 1;
+        z-index: 2;
+    }
+
+}
+
+@media all and (max-width:900px) {
+
+    .sportif article:first-of-type div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sportif article:first-of-type {
+        padding-top: 0;
+    }
+
+    .sportif article:first-of-type img {
+        width: 75%;
+        height: auto;
+    }
+    
+    .sportif article:first-of-type p {
+        font-size: 80%;
+        margin: 2em;
+    }
+
+    .sportif table{
+        font-size: 60%;
+    } 
+
+    .sportif article:nth-of-type(3) div:first-of-type{
+        height: 300px;
+        width: 500px;
+        position: relative;
+        }
+
+}
+
+@media all and (max-width:750px) {
+
+    .sportif h1 {
+        font-size: 5em;
+    }
+
+    .sportif h2 {
+        font-size: 3.5em;
+        margin: 0.3em;
+    }
+
+    .sportif nav h4 {
+        font-size: 1.1em;
+    }
+
+    .sportif table{
+        font-size:40% ;
+    }
+
+    .sportif tr td,
+    .sportif thead,
+    .sportif thead th,
+    .sportif tbody,
+    .sportif span,
+    .sportif tfoot{
+        border-radius: 10px
+    }
+    
+    .carrousel{
+        width: 350px;
+        height: 215px;
+    }
+}
+
+@media all and (max-width: 550px) {
+
+    .sportif table{
+        font-size: 30%;
+    } 
+
+    .sportif article:nth-of-type(3) div:first-of-type{
+        height: 250px;
+        width: 400px;
+        position: relative;
+        }
+
+}
+
+@media all and (max-width:428px) {
+
+    h1 {
+        background-image: url(image/Sportif/image\ sportif.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: "Joti-one";
+        color: #1A2A6C;
+        height: 5em;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-top: 1em;
+        font-size: 2em;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    /****************************************************************************************************************************************/
+    /********************************************************* SPORTIF : Biographie *********************************************************/
+    /****************************************************************************************************************************************/
+
+    .sportif article:first-of-type div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 428px;
+    }
+
+    /****************************************************************************************************************************************/
+    /********************************************************** SPORTIF : Palmarès **********************************************************/
+    /****************************************************************************************************************************************/
+
+    .sportif thead th {
+        border-radius: 15px;
+    }
+
+    .sportif tfoot tr,
+    .sportif tbody tr {
+        border-radius: 15px;
+    }
+
+    .sportif tr td {
+        border-radius: 15px;
+    }
+
+    .sportif span {
+        border-radius: 15px;
+    }
+}
+
+/*
+#################################################################################################################
+#################################################################################################################
+###                                                                                                           ###
+###            ##       #######   #####            #####   ######    #####    ######    #########             ###
+###            ##       #######  #######          #######  #######  #######   #######   #########             ###
+###            ##       ##       ####             ####     ##   ##  ##    ##  ##   ##      ###                ###
+###            ##       #####     ####             ####    ##   ##  ##    ##  ######       ###                ###
+###            ##       ##         ####              ####  ######   ##    ##  ##   ##      ###                ###
+###            #######  #######  #######          #######  ##       ########  ##    ##     ###                ###
+###            #######  #######   #####            #####   ##        ######   ##    ##     ###                ###
+###                                                                                                           ###
+#################################################################################################################
+#################################################################################################################
+*/
+
+#img-sport-de-combat{
+    background-image: url(../images/sports/sport-de-combat.jpg);
+    background-position: 20%;
+}
+#img-course{
+    background-image: url(../images/sports/course.jpg);
+    background-position: center;
+}
+#img-saut{
+    background-image: url(../images/sports/saut.jpg);
+    background-position: 30%;
+}
+#img-cyclisme{
+    background-image: url(../images/sports/cyclisme-normal.jpg);
+    background-position: 20%;
+}
+
+#img-cyclisme-sur-piste{
+    background-image: url(../images/sports/cyclisme.jpg);
+    background-position: 20%;
+}
+
+#img-gymnastique{
+    background-image: url(../images/sports/gym-artistique.jpg);
+    background-position: center;
+}
+
+#img-sport-co{
+    background-image: url(../images/sports/sport-co.jpg);
+    background-position: 60%;
+}
+
+#img-natation-vitesse{
+    background-image: url(../images/sports/natation-vitesse.jpg);
+}
+
+#img-sport-eau{
+    background-image: url(../images/sports/sport-eau.jpg);
+    background-position: center;
+}
+
+#img-glisse{
+    background-image: url(../images/sports/sport-de-glisse.jpeg);
+    background-position: 20%;
+}
+
+#img-equitation{
+    background-image: url(../images/sports/cheval.jpg);
+    background-position: 70%;
+}
+
+#img-escrime{
+    background-image: url(../images/sports/escrime.jpg);
+    background-position: 60%;
+}
+
+#img-multisport{
+    background-image: url(../images/sports/décat.jpg);
+    background-position: center;
+}
+
+#img-sport-de-raquette{
+    background-image: url(../images/sports/raquette.jpg);
+    background-position: center;
+}
+
+/*
+#################################################################################################################
+#################################################################################################################
+###                                                                                                           ###
+###                       #######  ##        #####   ###     ###  ###     ###  #######                        ###
+###                       #######  ##       #######  ####   ####  ####   ####  #######                        ###
+###                       ##       ##       ##   ##  ## ##### ##  ## ##### ##  ##                             ###
+###                       #####    ##       #######  ##  ###  ##  ##  ###  ##  #####                          ###
+###                       #####    ##       #######  ##       ##  ##       ##  ##                             ###
+###                       ##       #######  ##   ##  ##       ##  ##       ##  #######                        ###
+###                       ##       #######  ##   ##  ##       ##  ##       ##  #######                        ###
+###                                                                                                           ###
+#################################################################################################################
+#################################################################################################################
+*/
+
+#parcours section:nth-child(2) article div,
+#parcours section:nth-child(3) article div,
+#parcours section:nth-child(5) article div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#parcours section:nth-child(5) article div h3{
+    margin: 0;
+}
+
+
+#parcours section:nth-child(2) div,
+#parcours section:nth-child(3) div,
+#parcours section:nth-child(5) article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+
+}
+
+/* Gestion des zone de text*/
+#parcours section:nth-child(2) div article,
+#parcours section:nth-child(3) div article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+
+}
+
+#parcours section:nth-child(5) article p{
+    width: 60%;
+
+}
+
+/*Gestion des images*/
+
+#parcours section:nth-child(2) div figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#parcours section:nth-child(2) div img{
+    width: 30em;
+    height: auto;
+    margin: 1em;
+    border-radius: 30px;
+}
+
+#parcours section:nth-child(3) div img{
+    width: 40em;
+    height: auto;
+    margin: 1em;
+    border-radius: 30px;
+}
+
+#parcours section:nth-child(5) article img{
+    width: 40em;
+    height: auto;
+    margin: 1em;
+    border-radius: 30px;
+}
+
+
+/****************************************************************************************************************************************/
+/********************************************************** FLAMME : RELAYEURS **********************************************************/
+/****************************************************************************************************************************************/
+
+
+
+
+#parcours section:nth-child(4) div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#parcours section:nth-child(4) div article{
+    display: flex;
+    margin: 1em;
+    padding: 1em;
+    width: 40%;
+    border-radius: 30px;
+    background-color: #B4B4B4;
+    background-image: url(../images/relais/relayeurs/torche.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: top;
+    background-position: bottom 95% right 98%;
+
+    box-shadow: 0 2px 5px;
+}
+
+#parcours section:nth-child(4) article div{
+    margin-right: 1em;
+}
+
+#parcours section:nth-child(4) div img{
+    width: 10em;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/*Media Querries de la pages parcours de la flamma olympiques*/
+@media all and (max-width:880px) {  
+
+
+    #titre-parcours{
+        font-size: 4em;
+    }
+
+    #parcours section:nth-child(2) div,#parcours section:nth-child(3) div,#parcours section:nth-child(5) article{
+        flex-direction: column-reverse;
+    } 
+
+    #parcours section:nth-child(2) div article,#parcours section:nth-child(3) div article{
+        width: 75%
+    }
+
+    #parcours section:nth-child(5) article p{
+        width: 75%; 
+    }
+
+    #parcours section:nth-child(2) div img{
+        width: 70%;
+        height: auto;
+    }
+    
+    #parcours section:nth-child(3) div img{
+        width: 70%;
+        height: auto;
+    }
+    
+    #parcours section:nth-child(5) article img{
+        width: 70%;
+        height: auto;
+    }
+
+    #parcours section:nth-child(4) div article{
+        width: 100%;
+    }
+}   
+
+
+/*
+########################################################################################################################################################
+########################################################################################################################################################
+###                                                                                                                                                  ###
+###      ######      ##   ##  ####          #####    #####   ###     ###  ###     ###  ########   #####      ###    ##   #####   ##   ##   #####     ###
+###     ########     ##   ##   ##          #######  #######  ####   ####  ####   ####  ########  #######     ####   ##  #######  ##   ##  #######    ###
+###    ###    ###    ##   ##   ##          ####     ##   ##  ## ##### ##  ## ##### ##  ##        ####        ## ##  ##  ##   ##  ##   ##  ####       ###
+###    ##      ##    ##   ##   ##           ####    ##   ##  ##  ###  ##  ##  ###  ##  ######     ####       ##  ## ##  ##   ##  ##   ##   ####      ###
+###    ###    ###    ##   ##   ##             ####  ##   ##  ##       ##  ##       ##  ##           ####     ##   ####  ##   ##  ##   ##     ####    ###
+###     ##########   #######   ##          #######  #######  ##       ##  ##       ##  ########  #######     ##    ###  #######  #######  #######    ###
+###      #####  ###   #####   ####          #####    #####   ##       ##  ##       ##  ########   #####      ##     ##   #####    #####    #####     ###
+###                                                                                                                                                  ###
+########################################################################################################################################################
+########################################################################################################################################################
+*/
+
+#a_propos main section {
+    margin-top : 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#a_propos main section article {
+    display: flex;
+    align-items: center;
+}
+
+
+@media all and (max-width: 430px) {
+
+    #a_propos main section article {
+        flex-direction: column;
+    }
+
+
+    #a_propos main section article img {
+        width: 100%;
+        max-width: 385px;
+        border-radius: 20px;
+    }
+
+    #a_propos section:nth-child(2) article:last-child img {
+        display: none;
+    }
+}
+
+
+
+@media all and (min-width: 1050px) {
+
+    #a_propos main section article {
+        flex-direction: row;
+        margin : 2em auto;
+    }
+
+
+    #a_propos main section article img {
+        width: 50%;
+        max-width: 500px;
+        border-radius: 20px;
+        margin: auto 1em;
+    }
+
+    #a_propos section:nth-child(2) article:last-child img {
+        display: block;
+    }
+}

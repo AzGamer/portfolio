@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabin CHEVALIER">
+    <meta name="keyword" content="accueil,jeux olympiques,paris,2024,paris2024,JO,jeux paralympiques,accueil jo, accueil Paris 2024" lang="fr">
+    <meta name="keyword" content="home, Olympic Games, Paris, 2024, Paris2024, Olympic Games, Paralympic Games, Olympic Games welcome, Paris 2024 welcome" lang="en">
+    <meta name="description" content="Page d'accueil du site des Jeux Olympiques de Paris 2024">
+    <title>Accueil - JO Paris 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-accueil">
+    <section> <!--Block qui contient le popup et son script FAIT PAR GABIN CHEVALIER-->
+        <div class="overlay-popup">
+            <div class="content-popup">
+                <h2>Rien n'est prévu pour ce bouton</h2>
+                <p>Ce bouton est présent mais n'a aucune fonction pour le moment. Il est là uniquement à des fins décoratives ou a été imaginé dans le cadre d'une future fonctionnalité qui pourrait être ajoutée ultérieurement. Sa présence permet de préfigurer des évolutions possibles du produit ou de familiariser les utilisateurs avec son emplacement en vue d'une mise à jour prochaine. </p>
+                <button onclick="openPopup()">X</button>
+            </div>
+        </div>
+        <!-- Script qui permet d'afficher/de-afficher le popup -->
+        <script>
+
+            const openPopup = () => {
+                const popup = document.querySelector(".overlay-popup");
+                popup.classList.toggle('active-popup')
+            }
+
+        </script>
+    </section>
+
+    <header>
+        <img src="../images/header/logo-JO.png" alt="Logo Paris 2024" title="Paris 2024">
+        <nav>
+            <ul>
+                <li>
+                    <a href="accueil.html">
+                        <img src="../images/header/icone-accueil.png" alt="Icone page d'accueil" title="Icone page d'accueil">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="openPopup()">
+                        <img src="../images/header/logo-para.png" alt="Icone jeux Paralympiques" title="Icone jeux paralympiques">
+                        Jeux Paralympiques
+                    </a>
+                </li>
+                <li>
+                    <a href="./parcours-flamme.html">
+                        <img src="../images/header/icone-flamme.png" alt="Icone relais de la flamme" title="Icone relais de la flamme">
+                        Relais de la flamme
+                    </a>
+                </li>
+                <li>
+                    <a href="./les-sports.html">
+                        <img src="../images/header/icone-volley.png" alt="Icone page les sports" title="Icone page les sports">
+                        Les sports
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="accueil">
+        <!--Titre de page avec image de fond-->
+        <h1 id="titre-accueil">JEUX OLYMPIQUES <br>Paris 2024</h1>
+
+
+        <!--1ère section avec les sites emblématiques-->
+
+        <section>
+            <h2>Sites emblématiques des Jeux Olympiques</h2>
+            <div>
+                <!--Grand Palais -->
+                <article>
+                    <h3>Grand Palais</h3>
+                    <!-- Pictogrammes -->
+                    <figure>
+                        <img src="../images/Accueil/sites/picto/taek.png" alt="Pictogramme taekwondo" title="Pictogramme taekwondo">
+                        <img src="../images/Accueil/sites/picto/escrime.png" alt="Pictogramme escrime" title="Pictogramme escime">
+                    </figure>
+                </article>
+                <!--Teahupo'o -->
+                <article>
+                    <h3>Teahupo'o</h3>
+                    <!-- Pictogrammes -->
+                    <figure>
+                        <img src="../images/Accueil/sites/picto/surf.png" alt="Pictogramme surf" title="Pictogramme surf">
+                    </figure>
+                </article>
+                <!-- Stade Tour effeil -->
+                <article>
+                    <h3>Stade Tour Eiffel</h3>
+                    <!-- Pictogrammes -->
+                    <figure>
+                        <img src="../images/Accueil/sites/picto/volley.png" alt="Pictogramme volley" title="Pictogramme volley">
+                    </figure>
+                </article>
+                <!-- Champs-de-Mars -->
+                <article>
+                    <h3>Champs-de-Mars</h3>
+                    <!-- Pictogrammes -->
+                    <figure>
+                        <img src="../images/Accueil/sites/picto/judo.png" alt="Pictogramme judo" title="Pictogramme judo">
+                        <img src="../images/Accueil/sites/picto/lutte.png" alt="Pictogramme lutte" title="Pictogramme lutte">
+                    </figure>
+                </article>
+                <!-- Stade de France -->
+                <article>
+                    <h3>Stade de France</h3>
+                    <!-- Pictogrammes -->
+                    <figure>
+                        <img src="../images/Accueil/sites/picto/rugby.png" alt="Pictogramme Rugby à 7" title="Pictogramme Rugby à 7">
+                        <img src="../images/Accueil/sites/picto/athlé.png" alt="Pictogramme athlétisme" title="Pictogramme athlétisme">
+                    </figure>
+                </article>
+                <!-- Pont Alexandre III -->
+                <article>
+                    <!-- span pour mettre un fond sur le text pour améliorer le contaste -->
+                    <h3><span>Pont Alexandre III</span></h3>
+                    <!-- Pictogrammes -->
+                    <figure>
+                        <img src="../images/Accueil/sites/picto/cyclisme-sur-route.png" alt="Pictogramme cyclisme sur route" title="Pictogramme cyclisme sur route">
+                        <img src="../images/Accueil/sites/picto/natation.png" alt="Pictogramme natation" title="Pictogramme natation">
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+
+
+        <!--2ème section avec le liens vers la page qui sommes nous-->
+
+        <section>
+            <h2>Pays organisateur des Jeux Paris 2024</h2>
+            <figure>
+                <img src="../images/Accueil/qui-sommes-nous.jpg" alt="fond image qui sommes nous" title="fond image qui sommes nous">
+                <!-- bouton qui sommes nous -->
+                <figcaption>
+                    <p><a href="a_propos.html">QUI NOUS SOMMES ?</a></p>
+                </figcaption>
+            </figure>
+        </section>
+
+
+
+        <!--3ème section avec les chiffres clés-->
+
+        <section>
+            <h2>Chiffres clés</h2>
+
+            <h4>DU 26 JUILLET 2024 JUSQU'AU 11 AOUT 2024</h4>
+            <!-- conteneur -->
+            <div>
+                <!-- un article = une ligne -->
+                <article>
+                    <h3>Évènement Mondiale</h3>
+                    <figure>
+                        <img src="../images/Accueil/chiffre-clé/logo-cnosf.jpg" alt="logo comité nationaux" title="logo comité nationaux">
+                        <p>206 Comités nationaux olympiques participants</p>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/Accueil/chiffre-clé/300-epreuve.jpg" alt="images stade tour Eiffel" title="images stade tour Eiffel">
+                        <p>329 Epreuves sportives différentes prévus</p>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/Accueil/chiffre-clé/32-sport.jpg" alt="32 sports" title="32 sports">
+                        <p>32 Sports au programme dont 4 nouveaux</p>
+                    </figure>
+                </article>
+
+                <article>
+                    <h3>Participants & Spéctateurs</h3>
+                    <figure>
+                        <img src="../images/Accueil/chiffre-clé/10k-athletes.jpg" alt="10500 athlètes" title="10500 athlètes">
+                        <p>10.500 athlètes de 206 nations attendus</p>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/Accueil/chiffre-clé/spectateurs.jpg" alt="Images de spectateurs" title="Images de spectateurs">
+                        <p>13 Millions de spectateurs attendus sur place</p>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/Accueil/chiffre-clé/site.jpg" alt="Image paris" title="Image paris">
+                        <p>40 sites de compétition attendent les spectateurs et athlètes</p>
+                    </figure>
+                </article>
+
+                <article>
+                    <h3>Moment historique</h3>
+                    <figure>
+                        <img src="../images/Accueil/chiffre-clé/ceremonie-ouverture.jpg" alt="Cérémonie d'ouverture" title="Cérémonie d'ouverture">
+                        <p>1<sup>ère</sup> cérémonie d'ouverture hors stade</p>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/Accueil/chiffre-clé/100-ans.jpg" alt="100 ans d'histoire" title="100 ans d'histoire">
+                        <p>100 ans depuis les derniers JO Française</p>
+                    </figure>
+
+                    <figure>
+                        <img src="../images/Accueil/chiffre-clé/parite.jpg" alt="Parité homme femme" title="Parité homme femme">
+                        <p>1<sup>ère</sup> parité homme-femme de 50%</p>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+
+        <!--4ème section avec les grands moments, modèle == à ceux de la page "les sports"-->
+
+        <section>
+            <h2>Les grands moments</h2>
+            <div>
+                <article>
+                    <h5>RELAIS DE LA FLAMME OLYMPIQUE</h5>
+                    <div class="img-grand-moment" id="img-relais"></div>
+                    <a onclick="openPopup()" href="#" class="plus-informtion">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>CÉRÉMONIE D'OUVERTURE</h5>
+                    <div class="img-grand-moment" id="img-ceremonie"></div>
+                    <a onclick="openPopup()" class="plus-informtion">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>INTRODUCTION DE NOUVEAUX SPORTS</h5>
+                    <div class="img-grand-moment" id="img-nv-sport"></div>
+                    <a onclick="openPopup()" class="plus-informtion">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+
+
+        <!--5ème section avec les exploits sportifs-->
+        <section>
+            <h2>Les exploits sportifs</h2>
+            <!-- armand mondo nouveau record -->
+            <article>
+                <img src="../images/Accueil/exploit-sportif/armand-mondo.jpg" alt="Photo Armand Mondo" title="Photo Armand Mondo">
+                <div>
+                    <h4>NOUVEAU RECORD OLYMPIQUE</h4>
+                    <p>Armand "Mondo" Duplantis, champion suédois du saut à la perche, est détenteur du record mondial.
+                        <br>
+                        <br>
+                        Aux Jeux Olympiques de Paris 2024, il a franchi 6,22 mètres, battant ainsi le record olympique et consolidant sa domination dans la discipline.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- arisa trew nouveau recoard -->
+            <article>
+                <img src="../images/Accueil/exploit-sportif/arisa-trew.jpg" alt="Photo Arisa" title="Photo Arisa">
+                <div>
+                    <h4>LA PLUS JEUNE ATHLÈTE TITRER</h4>
+                    <p>Arisa Trew, skateboardeuse australienne de 14 ans, a marqué l'Histoire en devenant la plus jeune
+                        athlète australienne à remporter une médaille d'or olympique.
+                        <br>
+                        <br>
+                        Lors des JO de Paris 2024, elle a triomphé en skatepark féminin avec un score de 93,18
+                    </p>
+                </div>
+            </article>
+        </section>
+
+
+        <!--6ème section avec les moments phares-->
+
+        <section class="moment-phare">
+            <h2>Moment phares de la cérémonie</h2>
+            <div>
+                <article onclick="openPopup()">
+                    <img src="../images/Accueil/moment-phare/defile.jpg" alt="défilé" title="défilé">
+                    <h4>DÉFILÉ DES ATHLÈTES MULTINATIONAUX</h4>
+                </article>
+
+                <article onclick="openPopup()">
+                    <img src="../images/Accueil/moment-phare/iron-knight.jpg" alt="Chevalier d'argent" title="Chevalier d'argent">
+                    <h4>LE CHEVALIER D'ARGENT SUR LA SEINE</h4>
+                </article>
+
+                <article onclick="openPopup()">
+                    <img src="../images/Accueil/moment-phare/discour-ouverture.jpg" alt="Discour ouverture" title="Discour ouverture">
+                    <h4>OUVERTURE OFFICIELLE DES JEUX OLYMPIQUES 2024</h4>
+                </article>
+            </div>
+        </section>
+
+
+
+        <!--7ème section avec les tableaux des medailles olympiques et paralympiques (== aux tableaux d'ywan sur la page discipline)-->
+
+        <section>
+            <h2>Tableau des medailles olympiques & Paralympiques</h2>
+
+            <!-- jeux olympiques -->
+            <table class="medal_table">
+                <caption>Médailles des Jeux Olympiques</caption>
+                <thead>
+                    <tr>
+                        <th><span>#</span></th>
+                        <th colspan="2"><span>Pays</span></th>
+                        <th><span><img src="../images/tableaux/medaille-dor.png" alt="medaille d'or" title="medaille d'or"></span></th>
+                        <th><span><img src="../images/tableaux/medaille-dargent.png" alt="medaille d'argent" title="medaille d'argent"></span></th>
+                        <th><span><img src="../images/tableaux/medaille-de-bronze.png" alt="medaille de bronze" title="medaille de bronze"></span></th>
+                        <th><span>Total</span></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- USA -->
+                    <tr>
+                        <th><span>1</span></th>
+                        <td><img src="../images/tableaux/us.jpg" alt="Drapeau USA" title="Drapeau USA"></td>
+                        <td><span>Etats-Unis</span></td>
+                        <td><span>40</span></td>
+                        <td><span>44</span></td>
+                        <td><span>42</span></td>
+                        <td><span>126</span></td>
+                    </tr>
+
+                    <!-- Chine -->
+                    <tr>
+                        <th><span>2</span></th>
+                        <td><img src="../images/tableaux/cn.jpg" alt="Drapeau Chine" title="Drapeau Chine"></td>
+                        <td><span>Chine</span></td>
+                        <td><span>40</span></td>
+                        <td><span>27</span></td>
+                        <td><span>24</span></td>
+                        <td><span>91</span></td>
+                    </tr>
+
+                    <!-- Japon -->
+                    <tr>
+                        <th><span>3</span></th>
+                        <td><img src="../images/tableaux/jp.jpg" alt="Drapeau japon" title="Drapeau japon"></td>
+                        <td><span>Japon</span></td>
+                        <td><span>20</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td><span>45</span></td>
+                    </tr>
+
+                    <!-- Australie -->
+                    <tr>
+                        <th><span>4</span></th>
+                        <td><img src="../images/tableaux/au.jpg" alt="Drapeau australie" title="Drapeau australie"></td>
+                        <td><span>Australie</span></td>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>16</span></td>
+                        <td><span>53</span></td>
+                    </tr>
+
+                    <!-- France -->
+                    <tr>
+                        <th><span>5</span></th>
+                        <td><img src="../images/tableaux/fr.jpg" alt="Drapeau france" title="Drapeau france"></td>
+                        <td><span>France</span></td>
+                        <td><span>16</span></td>
+                        <td><span>26</span></td>
+                        <td><span>22</span></td>
+                        <td><span>64</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- jeux paralympiques -->
+            <table class="medal_table">
+                <caption>Médailles des Jeux Paralympiques</caption>
+                <thead>
+                    <tr>
+                        <th><span>#</span></th>
+                        <th colspan="2"><span>Pays</span></th>
+                        <th><span><img src="../images/tableaux/medaille-dor.png" alt="medaille d'or" title="medaille d'or"></span></th>
+                        <th><span><img src="../images/tableaux/medaille-dargent.png" alt="medaille d'argent" title="medaille d'argent"></span></th>
+                        <th><span><img src="../images/tableaux/medaille-de-bronze.png" alt="medaille de bronze" title="medaille de bronze"></span></th>
+                        <th><span>Total</span></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Chine -->
+                    <tr>
+                        <th><span>1</span></th>
+                        <td><img src="../images/tableaux/cn.jpg" alt="Drapeau USA" title="Drapeau USA"></td>
+                        <td><span>Chine</span></td>
+                        <td><span>94</span></td>
+                        <td><span>76</span></td>
+                        <td><span>50</span></td>
+                        <td><span>220</span></td>
+                    </tr>
+
+                    <!-- Grande Bretagne -->
+                    <tr>
+                        <th><span>2</span></th>
+                        <td><img src="../images/tableaux/gb.jpg" alt="Drapeau Chine" title="Drapeau Chine"></td>
+                        <td><span>Grande-Bretagne</span></td>
+                        <td><span>49</span></td>
+                        <td><span>44</span></td>
+                        <td><span>31</span></td>
+                        <td><span>124</span></td>
+                    </tr>
+
+                    <!-- USA -->
+                    <tr>
+                        <th><span>3</span></th>
+                        <td><img src="../images/tableaux/us.jpg" alt="Drapeau japon" title="Drapeau japon"></td>
+                        <td><span>Etats-Unis</span></td>
+                        <td><span>36</span></td>
+                        <td><span>42</span></td>
+                        <td><span>27</span></td>
+                        <td><span>105</span></td>
+                    </tr>
+
+                    <!-- France -->
+                    <tr>
+                        <th><span>4</span></th>
+                        <td><img src="../images/tableaux/nl.jpg" alt="Drapeau france" title="Drapeau france"></td>
+                        <td><span>Pays-Bas</span></td>
+                        <td><span>27</span></td>
+                        <td><span>17</span></td>
+                        <td><span>12</span></td>
+                        <td><span>56</span></td>
+                    </tr>
+
+                    <!-- Australie -->
+                    <tr>
+                        <th><span>5</span></th>
+                        <td><img src="../images/tableaux/br.jpg" alt="Drapeau australie" title="Drapeau australie"></td>
+                        <td><span>Brésil</span></td>
+                        <td><span>25</span></td>
+                        <td><span>26</span></td>
+                        <td><span>38</span></td>
+                        <td><span>89</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+        <!--8ème section avec les sponsors-->
+
+        <section class="sponsor">
+            <h2>Partenaires officiels</h2>
+            <div>
+                <a href="https://www.parisaeroport.fr/homepage-groupe"><img src="../images/Accueil/sponsors/logo-groupe-adp.png" alt="Logo Sponsor groupe adp" title="Logo Sponsor groupe adp"></a>
+                <a href="https://www.lecoqsportif.com/"><img src="../images/Accueil/sponsors/logo-le-coq-sportif.png" alt="Logo Sponsor Le coq sportif" title="Logo Sponsor Le coq sportif"></a>
+                <a href="https://www.gl-events.com/fr"><img src="../images/Accueil/sponsors/logo-gl-event.png" alt="Logo Sponsor GL Event" title="Logo Sponsor GL Event"></a>
+                <a href="https://www.pwc.fr/fr.html"><img src="../images/Accueil/sponsors/Logo-pwc.png" alt="Logo Sponsor PWC" title="Logo Sponsor PWC"></a>
+                <a href="https://www.caissedesdepots.fr/"><img src="../images/Accueil/sponsors/logo-caisse-des-depots.png" alt="Logo Sponsor caisse de dépot" title="caisse des dépots"></a>
+                <a href="https://www.fdj.fr/"><img src="../images/Accueil/sponsors/logo-fdj.png" alt="Logo Sponsor FDJ" title="Logo Sponsor FDJ"></a>
+                <a href="https://wwws.airfrance.fr/"><img src="../images/Accueil/sponsors/Logo-airfrance.png" alt="Logo Sponsor Airfrance" title="Logo Sponsor Airefrance"></a>
+                <a href="https://www.iledefrance-mobilites.fr/"><img src="../images/Accueil/sponsors/logo-idf-mobilite.png" alt="Logo Sponsor Ile de france mobilite" title="Logo Sponsor Ile de france mobilité"></a>
+                <a href="https://www.decathlon.fr/"><img src="../images/Accueil/sponsors/logo-decathlon.png" alt="Logo Sponsor Decathlon" title="Logo Sponsor Decathlon"></a>
+                <a href="https://www.cisco.com/site/fr/fr/index.html"><img src="../images/Accueil/sponsors/logo-cisco.png" alt="Logo Sponsor cisco" title="Logo Sponsor cisco"></a>
+                <a href="https://www.cma-cgm.fr/"><img src="../images/Accueil/sponsors/logo-cmacgm.png" alt="Logo Sponsor CMA CGM" title="Logo Sponsor CMA CGM"></a>
+                <a href="https://france.arcelormittal.com/"><img src="../images/Accueil/sponsors/Logo-ArcelorMittal.png" alt="Logo Sponsor Arcelor Mitall" title="Logo Sponsor Arcelor Mitall"></a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+
+        <div>
+
+            <div>
+
+                <h4>Navigation suplémentaire</h4>
+
+                <nav>
+
+                    <a href="https://www.figma.com/design/zf6yQrWYtgj2dRsCGiWE6d/S1.05---Maquettage?node-id=0-1&p=f&t=EvZRfyJdlxEf63pL-0">Plan du site</a>
+                    <a href="https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-see-more-HP-fr-nl">Boutique Olympique</a>
+                    <a href="https://olympics.com/cio/faq">F.A.Q.</a>
+                    <img src="../images/Footer/logo_footer.png" alt="Logo JO Paris 2024" title="Logo JO Paris 2024">
+
+                </nav>          
+
+            </div>
+
+            <div>
+
+                <h4>Contacts</h4>
+
+                <address>
+
+                    <a href="https://maps.app.goo.gl/gGTcy8TCAw5E7dBS9">
+                        IUT Lannion<br>
+                        Rue Edouard Branly<br>
+                        22300 - Lannion
+                    </a>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <a href="tel:0809540550">+33 809 540 550</a>
+                    <br>
+                    <a href="mailto:Pressoperations@paris2024.org">Pressoperations@paris2024.org</a>
+
+                </address>
+
+            </div>
+
+            <div>
+
+                <h4>Réseaux Sociaux</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="https://www.instagram.com/paris2024/"><p><img src="../images/Footer/insta.png" alt="Logo Instagram" title="Logo Instagram"> Instagram</p></a>
+                    </li>
+
+                    <li> 
+                        <a href="https://www.facebook.com/Paris2024/?locale=fr_FR   "> <p> <img src="../images/Footer/facebook.png" alt="Logo FaceBook" title="Logo FaceBook"> FaceBook </p></a>
+                    </li>
+  
+                    <li>
+                        <a href="https://www.tiktok.com/@jeuxolympiques?lang=fr"><p><img src="../images/Footer/tiktok.png" alt="Logo TikTok" title="Logo TikTok"> TikTok</p></a>
+                    </li>
+
+                    <li> 
+                        <a href="https://x.com/paris2024"><p> <img src="../images/Footer/twitter.png" alt="Logo Twiiter" title="Logo Twiiter"> Twitter</p></a>
+                    </li>    
+                
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <p><strong><em>Copyright © Jeux Olympiques - Paris 2024.<br>Tous droits réservés.</em></strong></p>
+            <p><strong><em>Mentions légales<br>Politique de confidentialité<br>Conditions générales d'utilisation</em></strong></p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

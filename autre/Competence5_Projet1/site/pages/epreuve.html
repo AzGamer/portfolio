@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ewen THÉPOT">
+    <meta name="keyword" content="évènement, epreuve,jeux olympiques,paris,2024,paris2024,JO,jeux paralympiques,400m jo, 4 nages Paris 2024, natation, 400m, 4 nages, nage, records, clasement, médaille" lang="fr">
+    <meta name="keyword" content="event, test, Olympic Games, Paris, 2024, Paris 2024, Olympic Games, Paralympic Games, Olympic Games swimming, Paris 2024 swimming, swimming, 400m, medley, swimming, records, ranking, medal" lang="en">
+    <meta name="description" content="Le 400m 4 nages aux Jeux Olympiques de Paris 2024">
+    
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <title>Le 400 mètres 4 nages - JO Paris 2024</title>
+</head>
+
+<body>
+
+    <section> <!--Block qui contient le popup et son script FAIT PAR GABIN CHEVALIER-->
+        <div class="overlay-popup">
+            <div class="content-popup">
+                <h2>Rien n'est prévu pour ce bouton</h2>
+                <p>Ce bouton est présent mais n'a aucune fonction pour le moment. Il est là uniquement à des fins décoratives ou a été imaginé dans le cadre d'une future fonctionnalité qui pourrait être ajoutée ultérieurement. Sa présence permet de préfigurer des évolutions possibles du produit ou de familiariser les utilisateurs avec son emplacement en vue d'une mise à jour prochaine.</br>Il fait acte de présence.</p>
+                <button onclick="openPopup()">X</button>
+            </div>
+        </div>
+        <script>
+
+            const openPopup = () => {
+                const popup = document.querySelector(".overlay-popup");
+                popup.classList.toggle('active-popup')
+            }
+
+        </script>
+    </section>
+
+    <header> <!--Header de la page-->
+        <img src="../images/header/logo-JO.png" alt="Logo Paris 2024" title="Paris 2024">
+        <nav>
+            <ul> <!--Boutons du header qui redirigent vers les autres pages-->
+                <li>
+                    <a href="accueil.html">
+                        <img src="../images/header/icone-accueil.png" alt="Icone page d'accueil" title="Icone page d'accueil">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="openPopup()">
+                        <img src="../images/header/logo-para.png" alt="Icone jeux Paralympiques" title="Icone jeux paralympiques">
+                        Jeux Paralympiques
+                    </a>
+                </li>
+                <li>
+                    <a href="parcours-flamme.html">
+                        <img src="../images/header/icone-flamme.png" alt="Icone relais de la flamme" title="Icone relais de la flamme">
+                        Relais de la flamme
+                    </a>
+                </li>
+                <li>
+                    <a href="les-sports.html">
+                        <img src="../images/header/icone-volley.png" alt="Icone page les sports" title="Icone page les sports">
+                        Les sports
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="epreuve"> <!--Corps principal de la page-->
+
+        <!--Titre de la page-->
+        <h1>Le 400 mètres 4 nages</h1>
+
+        <!--Premier article, présentation et histoire de l'épreuve-->
+        <article>
+            <h2>Présentation Générale</h2>
+            <div>
+                <p>L’épreuve du 400 mètres 4 nages aux Jeux Olympiques est une des courses les plus exigeantes et spectaculaires de la natation. Un seul athlète doit enchaîner les quatre styles de nage dans un ordre précis : papillon, dos, brasse et nage libre, sur une distance de 100 mètres chacun. Cette épreuve demande une polyvalence exceptionnelle, combinant endurance, puissance, et maîtrise technique dans chaque nage. Les nageurs doivent également gérer leur énergie et leur stratégie pour exceller dans toutes les sections, sans faiblir en fin de course. C’est une véritable démonstration de talent et de détermination, souvent marquée par des records et des performances inoubliables.</p>
+                <img src="../images/epreuve/presentation/histoire-natation.jpg" alt="Image hitsoire de la natation" title="Histoire de la natation">
+            </div>
+        </article>
+
+        <!--Second article, déroulement de l'épreuve-->
+        <article>
+            <h2>Déroulement de l'Épreuve</h2>
+            <div>
+                <p>L’épreuve du 400 mètres 4 nages aux Jeux Olympiques est une démonstration de polyvalence et d’endurance. Chaque nageur enchaîne 100 mètres dans les styles suivants : papillon, dos, brasse et nage libre. La course commence par un départ explosif en papillon, suivi du dos pour maintenir le rythme, puis de la brasse, souvent déterminante, avant une dernière ligne droite en nage libre où tout se joue. Cette épreuve exige une gestion parfaite de l’effort et une maîtrise technique, faisant souvent émerger des performances records et des moments mémorables.</p>
+                <img src="../images/epreuve/presentation/deroulement-epreuve.jpg" alt="Image déroulement de l'épreuve" title="Déroulement de l'épreuve">
+            </div>
+        </article>
+
+        <!--Tableau pour le planning des séries de l'épreuve-->
+        <table>
+            <!--Titre du tableau-->
+            <caption>Planning</caption>
+            <!--Entête du tableau-->
+            <thead>
+                <tr>
+                    <!--Entêtes de chaque colonnes-->
+                    <th>Planning Hommes</th>
+                    <th>Planning Femmes</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!--Lignes du tableau-->
+                <tr>
+                    <!--Cases de la première ligne-->
+                    <td>Première série : Dimanche 28 juillet à 11h15</td>
+                    <td>Première Série : Lundi 29 juillet à 11h00</td>
+                </tr>
+                <tr>
+                    <!--Cases de la seconde ligne-->
+                    <td>Seconde série : Dimanche 28 juillet à 11h15</td>
+                    <td>Seconde série : Lundi 29 juillet à 11h00</td>
+                </tr>
+                <tr>
+                    <!--Cases de la troisième ligne-->
+                    <td>Finale : Dimanche 28 juillet à 20h30</td>
+                    <td>Finale : Lundi 29 juillet à 20h30</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Première section pour les résultats de l'épreuve-->
+        <section>
+            <h2>Résultats Séries Masculines</h2>
+
+            <!--Premier tableau pour la première série-->
+            <table>
+                <!--Titre du tableau-->
+                <caption>Première série</caption>
+                <tbody>
+                    <!--Première ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>1</td>
+                        <td><img src="../images/tableaux/us.jpg" alt="Drapeau des États-Unis" title="États-Unis"></td>
+                        <td>FOSTER Carson</td>
+                        <td>4:11.07</td>
+                    </tr>
+                    <!--Seconde ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>2</td>
+                        <td><img src="../images/tableaux/jp.jpg" alt="Drapeau du Japon" title="Japon"></td>
+                        <td>MATSUSHITA Tomoyuki</td>
+                        <td>4:11.18</td>
+                    </tr>
+                    <!--Troisième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>3</td>
+                        <td><img src="../images/tableaux/it.jpg" alt="Drapeau de l'Italie" title="Italie"></td>
+                        <td>RAZZETTI Alberto</td>
+                        <td>4:11.52</td>
+                    </tr>
+                    <!--Quatrième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>4</td>
+                        <td><img src="../images/tableaux/cn.jpg" alt="Drapeau de la Chine" title="Chine"></td>
+                        <td>ZHANG Zhanshuo</td>
+                        <td>4:12.71</td>
+                    </tr>
+                    <!--Cinquième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>5</td>
+                        <td><img src="../images/tableaux/us.jpg" alt="Drapeau des États-Unis" title="États-Unis"></td>
+                        <td>KALISZ Chase</td>
+                        <td>4:13.36</td>
+                    </tr>
+                    <!--Sixième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>6</td>
+                        <td><img src="../images/tableaux/nz.jpg" alt="Drapeau de la Nouvelle Zelande" title="Nouvelle Zélande"></td>
+                        <td>PETRIC William</td>
+                        <td>4:13.58</td>
+                    </tr>
+                    <!--Septième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>7</td>
+                        <td><img src="../images/tableaux/hu.jpg" alt="Drapeau de la Hongrie" title="Hongrie"></td>
+                        <td>ZOMBORI Gabor</td>
+                        <td>4:14.88</td>
+                    </tr>
+                    <!--Huitième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>8</td>
+                        <td><img src="../images/tableaux/gr.jpg" alt="Drapeau de la Grèce" title="Grèce"></td>
+                        <td>PAPASTAMOS Apostolos</td>
+                        <td>4:15.32</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Second tableau pour la seconde série-->
+            <table>
+                <!--Titre du tableau-->
+                <caption>Seconde série</caption>
+                <tbody>
+                    <!--Première ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>1</td>
+                        <td><img src="../images/tableaux/fr.jpg" alt="Drapeau de la France" title="France"></td>
+                        <td>MARCHAND Léon</td>
+                        <td>4:08.30</td>
+                    </tr>
+                    <!--Seconde ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>2</td>
+                        <td><img src="../images/tableaux/gb.jpg" alt="Drapeau du Royaume-Uni" title="Royaume-Uni"></td>
+                        <td>LITCHFIELD Max</td>
+                        <td>4:09.51</td>
+                    </tr>
+                    <!--Troisième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>3</td>
+                        <td><img src="../images/tableaux/jp.jpg" alt="Drapeau du Japon" title="Japon"></td>
+                        <td>SETO Daiya</td>
+                        <td>4:10.92</td>
+                    </tr>
+                    <!--Quatrième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>4</td>
+                        <td><img src="../images/tableaux/de.jpg" alt="Drapeau de l'Allemagne'" title="Allemagne"></td>
+                        <td>BUESSING Cedric</td>
+                        <td>4:11.52</td>
+                    </tr>
+                    <!--Cinquième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>-</td>
+                        <td><img src="../images/tableaux/nz.jpg" alt="Drapeau de la Nouvelle-Zélande" title="Nouvelle-Zélande"></td>
+                        <td>CLAREBURT Lewis</td>
+                        <td>4:11.52</td>
+                    </tr>
+                    <!--Sixième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>6</td>
+                        <td><img src="../images/tableaux/hu.jpg" alt="Drapeau de la Hongrie" title="Hongrie"></td>
+                        <td>HOLLO Balazs</td>
+                        <td>4:12.20</td>
+                    </tr>
+                    <!--Septième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>7</td>
+                        <td><img src="../images/tableaux/nz.jpg" alt="Drapeau de la Nouvelle Zélande" title="Nouvelle Zélande"></td>
+                        <td>SMITH Brendon</td>
+                        <td>4:14.36</td>
+                    </tr>
+                    <!--Huitième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>8</td>
+                        <td><img src="../images/tableaux/ca.jpg" alt="Drapeau du Canada" title="Canada"></td>
+                        <td>JANKOVICS Tristan</td>
+                        <td>4:18.23</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Troisième tableau pour la finale-->
+            <table>
+                <!--Titre du tableau-->
+                <caption>Finale</caption>
+                <tbody>
+                    <!--Première ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>1</td>
+                        <td><img src="../images/tableaux/fr.jpg" alt="Drapeau de la France" title="France"></td>
+                        <td>MARCHAND Léon</td>
+                        <td>4:02.95</td>
+                    </tr>
+                    <!--Seconde ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>2</td>
+                        <td><img src="../images/tableaux/jp.jpg" alt="Drapeau du Japon" title="Japon"></td>
+                        <td>MATSUSHITA Tomoyuki</td>
+                        <td>4:08.62</td>
+                    </tr>
+                    <!--Troisième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>3</td>
+                        <td><img src="../images/tableaux/us.jpg" alt="Drapeau des États-Unis" title="États-Unis"></td>
+                        <td>FOSTER Carson</td>
+                        <td>4:08.66</td>
+                    </tr>
+                    <!--Quatrième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>4</td>
+                        <td><img src="../images/tableaux/gb.jpg" alt="Drapeau du Royaume-Uni" title="Royaume-Uni"></td>
+                        <td>LITCHFIELD Max</td>
+                        <td>4:08.85</td>
+                    </tr>
+                    <!--Cinquième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>5</td>
+                        <td><img src="../images/tableaux/it.jpg" alt="Drapeau de l'Italie" title="Italie"></td>
+                        <td>RAZZETTI Alberto</td>
+                        <td>4:09.38</td>
+                    </tr>
+                    <!--Sixième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>6</td>
+                        <td><img src="../images/tableaux/nz.jpg" alt="Drapeau de la Nouvelle Zélande" title="Nouvelle Zélande"></td>
+                        <td>CLAREBURT Lewis</td>
+                        <td>4:10.44</td>
+                    </tr>
+                    <!--Septième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>7</td>
+                        <td><img src="../images/tableaux/jp.jpg" alt="Drapeau du Japon" title="Japon"></td>
+                        <td>SETO Daiya</td>
+                        <td>4:11.78</td>
+                    </tr>
+                    <!--Huitième ligne du tableau-->
+                    <tr>
+                        <!--Cases de la ligne du tableau-->
+                        <td>8</td>
+                        <td><img src="../images/tableaux/de.jpg" alt="Drapeau de l'Allemagne" title="Allemagne"></td>
+                        <td>BUESSING Cedric</td>
+                        <td>4:17.16</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Seconde section pour le podium-->
+        <section>
+            <!--Titre de la section-->
+            <h2>Podium</h2>
+            <!--Conteneur pour le podium-->
+            <div>
+                <!--Première place-->
+                <article>
+                    <!--Nom du participant-->
+                    <h4><a href="sportif.html">Léon MARCHAND</a></h4>
+                    <!--Drapeau du pays du participant-->
+                    <img src="../images/tableaux/fr.jpg" alt="Drapeau de la France" title="France">
+                </article>
+                <!--Seconde place-->
+                <article>
+                    <!--Nom du participant-->
+                    <h4>Tomoyuki MATSUSHITA</h4>
+                    <!--Drapeau du pays du participant-->
+                    <img src="../images/tableaux/jp.jpg" alt="Drapeau du Japon" title="Japon">
+                </article>
+                <!--Troisième place-->
+                <article>
+                    <!--Nom du participant-->
+                    <h4>Carson FOSTER</h4>
+                    <!--Drapeau du pays du participant-->
+                    <img src="../images/tableaux/us.jpg" alt="Drapeau des États-Unis" title="États-Unis">
+                </article>
+            </div>
+        </section>
+        <!--Troisième et dernière section pour les records battus-->
+        <section>
+            <!--Titre de la section-->
+            <h2>Records battus ?</h2>
+            <!--Article un record battu-->
+            <article>
+                <!--Image du participant médaillé-->
+                <img src="../images/epreuve/record/leon-goat.jpg" alt="Photo Médaille Léon Marchand" title="Médaille Léon Marchand">
+                <!--Conteneur pour le texte de l'article-->
+                <div>
+                    <!--Titre du/des record(s)-->
+                    <h4>NOUVEAUX RECORDS OLYMPIQUES</h4>
+                    <!--Textes en lien avec le(s) record(s)-->
+                    <p>Du haut de ses 22 ans, <strong><a href="sportif.html">Léon Marchand</a></strong>, jeune prodige de sa discipline marque l’histoire des Jeux Olympiques à jamais.</p>
+                    <p>Dans la catégorie <strong><a href="discipline.html">natation vitesse</a></strong> de Paris 2024 il a accompli le micracle de décrocher non seulement 4 médailles d’or mais aussi 4 records olympiques.</p>
+                </div>
+            </article>
+        </section>
+        <!--Dernier article pour les moments forts de l'épreuve-->
+        <article>
+            <!--Titre de l'article-->
+            <h2>Moments Forts</h2>
+            <!--Conteneur des moments forts-->
+            <div>
+                <!--Premier moment fort-->
+                <a href="https://youtu.be/Tdx1OR4kgpg?si=ezXAazzOUPHar421"> <!--Lien menant à une vidéo du moment fort-->
+                    <figure>
+                        <!--Illustration du moment fort et image d'un bouton vidéo-->
+                        <img src="../images/epreuve/moment-fort/4nages.jpg" alt="Image 400m 4 nages" title="400m 4 nages">
+                        <img src="../images/epreuve/moment-fort/btn_ytb.png" alt="Image bouton YouTube" title="YouTube">
+                    </figure>
+                    <p>Finale 400m 4 nages</p>
+                </a>
+                <!--Second moment fort-->
+                <a href="https://www.instagram.com/summerrmcintosh/?locale=fr&hl=fr"> <!--Lien menant au profil Instagram de la participante pour plus de photos-->
+                    <figure>
+                        <!--Illustration du moment fort et image d'un bouton photos-->
+                        <img src="../images/epreuve/moment-fort/Summer-McIntosh.jpg" alt="Image Summer McIntosh" title="Summer McIntosh">
+                        <img src="../images/epreuve/moment-fort/bouton-photo.png" alt="Image bouton photos" title="Photos Instagram Summer McIntosh">
+                    </figure>
+                    <!--Texte décrivant le moment fort-->
+                    <p>Summer McIntosh médaillée d’or aux Jeux Olympiques</p>
+                </a>
+            </div>
+        </article>
+
+
+    </main>
+
+    <footer> <!--Pied de page-->
+        <div>
+            <div> <!--Liens suplémentaires-->
+                <h4>Navigation suplémentaire</h4>
+                <nav>
+
+                    <a href="https://www.figma.com/design/zf6yQrWYtgj2dRsCGiWE6d/S1.05---Maquettage?node-id=0-1&p=f&t=EvZRfyJdlxEf63pL-0">Plan du site</a>
+                    <a href="https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-see-more-HP-fr-nl">Boutique Olympique</a>
+                    <a href="https://olympics.com/cio/faq">F.A.Q.</a>
+                    <img src="../images/Footer/logo_footer.png" alt="Logo JO Paris 2024" title="Logo JO Paris 2024">
+
+                </nav>          
+            </div>
+
+            <div> <!--Coordonnées de contact-->
+                <h4>Contacts</h4>
+                <address>
+                    <a href="https://maps.app.goo.gl/gGTcy8TCAw5E7dBS9">
+                        IUT Lannion<br>
+                        Rue Edouard Branly<br>
+                        22300 - Lannion
+                    </a>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <a href="tel:0809540550">+33 809 540 550</a>
+                    <br>
+                    <a href="mailto:Pressoperations@paris2024.org">Pressoperations@paris2024.org</a>
+                </address>
+            </div>
+
+            <div> <!--Liens vers les réseaux sociaux des JO-->
+                <h4>Réseaux Sociaux</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/paris2024/"><p><img src="../images/Footer/insta.png" alt="Logo Instagram" title="Logo Instagram"> Instagram</p></a>
+                    </li>
+                    <li> 
+                        <a href="https://www.facebook.com/Paris2024/?locale=fr_FR   "> <p> <img src="../images/Footer/facebook.png" alt="Logo FaceBook" title="Logo FaceBook"> FaceBook </p></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@jeuxolympiques?lang=fr"><p><img src="../images/Footer/tiktok.png" alt="Logo TikTok" title="Logo TikTok"> TikTok</p></a>
+                    </li>
+                    <li> 
+                        <a href="https://x.com/paris2024"><p> <img src="../images/Footer/twitter.png" alt="Logo Twiiter" title="Logo Twiiter"> Twitter</p></a>
+                    </li>    
+                </ul>
+            </div>
+        </div>
+
+        <div> <!--Copyrights etc...-->
+            <p><strong><em>Copyright © Jeux Olympiques - Paris 2024.<br>Tous droits réservés.</em></strong></p>
+            <p><strong><em>Mentions légales<br>Politique de confidentialité<br>Conditions générales d'utilisation</em></strong></p>
+        </div>
+    </footer>
+
+</body>
+</html>

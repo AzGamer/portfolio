@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabin CHEVALIER">
+    <meta name="keyword" content="flamme olympique, parcours flamme, jo paris 2024, jeux olympiques" lang="fr">
+    <meta name="keyword" content="olympic flame, flame route, jo paris 2024, olympic games" lang="en">
+    <meta name="descrition" content="Page remontant à la fois l'histoire mais aussi le parcours de la flamme olympiques durant les JO de paris 2024">
+
+    <title>Flamme - JO Paris 2024</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="body-accueil">
+    <section> <!--Block qui contient le popup et son script-->
+        <div class="overlay-popup">
+            <div class="content-popup">
+                <h2>Rien n'est prévu pour ce bouton</h2>
+                <p>Ce bouton est présent mais n'a aucune fonction pour le moment. Il est là uniquement à des fins décoratives ou a été imaginé dans le cadre d'une future fonctionnalité qui pourrait être ajoutée ultérieurement. Sa présence permet de préfigurer des évolutions possibles du produit ou de familiariser les utilisateurs avec son emplacement en vue d'une mise à jour prochaine. </p>
+                <button onclick="openPopup()">X</button>
+            </div>
+        </div>
+
+        <script>
+
+            const openPopup = () => {
+                const popup = document.querySelector(".overlay-popup");
+                popup.classList.toggle('active-popup')
+            }
+
+        </script>
+
+    </section>
+
+    <header>
+        <img src="../images/header/logo-JO.png" alt="Logo Paris 2024" title="Paris 2024">
+        <nav>
+            <ul>
+                <li>
+                    <a href="accueil.html">
+                        <img src="../images/header/icone-accueil.png" alt="Icone page d'accueil" title="Icone page d'accueil">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="openPopup()">
+                        <img src="../images/header/logo-para.png" alt="Icone jeux Paralympiques" title="Icone jeux paralympiques">
+                        Jeux Paralympiques
+                    </a>
+                </li>
+                <li>
+                    <a href="./parcours-flamme.html">
+                        <img src="../images/header/icone-flamme.png" alt="Icone relais de la flamme" title="Icone relais de la flamme">
+                        Relais de la flamme
+                    </a>
+                </li>
+                <li>
+                    <a href="./les-sports.html">
+                        <img src="../images/header/icone-volley.png" alt="Icone page les sports" title="Icone page les sports">
+                        Les sports
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="parcours">
+
+        <h1 id="titre-parcours">RELAIS DE LA FLAMME <br> OLYMPIQUE</h1>
+
+        <!-- 1ère section avec l'histoire de la flamme olympique  -->
+
+        <section>
+            <h2>Histoire de la flamme olympique</h2>
+            <div>
+                <article>
+                    <div>
+                        <h3>Des sicèles d'histoire</h3>
+                        <p>
+                            La flamme olympique trouve ses origines dans la Grèce antique, où le feu jouait un rôle sacré
+                            dans les cérémonies religieuses.
+                            <br>
+                            <br>
+                            Lors des Jeux olympiques antiques, des feux sacrés étaient allumés sur les autels dédiés aux
+                            dieux, notamment Zeus et Héra, dans le sanctuaire d'Olympie. Ces feux étaient entretenus en
+                            permanence à l'aide d'une flamme issue d'une technique traditionnelle : un miroir parabolique
+                            concentrait les rayons du soleil pour produire une flamme pure.
+                            <br>
+                            <br>
+                            Le feu symbolisait la lumière divine, la pureté et la quête de la perfection.
+                            <br>
+                            <br>
+                            Aujourd'hui, la flamme olympique représente l'esprit des Jeux : la paix, l'amitié, et la
+                            continuité entre les Jeux anciens et modernes.
+                            Elle est allumée dans le temple d'Héra à Olympie à l'aide d'un miroir parabolique, puis
+                            transportée par un relais jusqu'au site des Jeux, souvent dans une grande cérémonie
+                            internationale.
+                        </p>
+                    </div>
+                </article>
+
+
+        <!-- 2 images illustrant l'histoire de la flamme olympique  -->
+
+
+                <figure>
+                    <img src="../images/relais/histoire/première-vasque-allumer-a-berlin.jpg" alt="Image première fois vasque olympique" title="Image première fois vasque olympique">
+                    <img src="../images/relais/histoire/flamme-olympique-origine.jpg" alt="Image de l'allumage de la torche de la flamme olympique" title="Image de l'allumage de la torche de la flamme olympique">
+                </figure>
+
+            </div>
+        </section>
+
+
+        <!-- 2ème section avec le parcours de la flamme olympique  -->
+
+        <section>
+            <h2>Parcours de la flamme olympique</h2>
+            <div>
+                <article>
+                    <div>
+                        <h3>À travers le monde</h3>
+                        <p>
+                            Le <strong>16 avril 2024</strong>, la flamme olympique sera allumée en <strong>Grèce</strong> et
+                            entamera un long voyage jusqu'à <strong>Marseille</strong>, où elle sera accueillie par le
+                            premier relayeur de la flamme des Jeux olympiques de Paris 2024.<br><br>
+                            Une fois en France, elle traversera plusieurs grandes villes telles que <strong>Toulon,
+                                Bordeaux, Brest, Le Havre, Strasbourg, ainsi que La Réunion</strong> et d'autres
+                            territoires.<br><br>
+                            Son périple prendra fin le <strong>26 juillet 2024</strong> à Paris, lors de la cérémonie
+                            d'ouverture, où la vasque olympique recevra la chaleur de cette flamme ayant traversé le pays et
+                            ses territoires d'outre-mer.<br><br>
+                        </p>
+                    </div>
+                </article>
+
+                <img src="../images/relais/parcours-flamme.jpg" alt="Carte parcours de la flamme" title="Carte parcours de la flamme">
+            </div>
+        </section>
+
+
+        <!-- 3ème section avec quelques relayeurs qui on participer au transport de la flamme olympique  -->
+
+        <section>
+            <h2>Quelques relayeurs de la flamme olympique</h2>
+            <div>
+                <article>
+                    <div>
+                        <h4>Thierry Henry</h4>
+                        <p>
+                            Légende du football français, ancien attaquant de l'équipe de France et champion du monde
+                            1998
+                        </p>
+                    </div>
+                    <img src="../images/relais/relayeurs/thierry.jpg" alt="Photo Thierry Henri" title="Photo Thierry Henri">
+                </article>
+
+                <article>
+                    <div>
+                        <h4>Marie-José Perec</h4>
+                        <p>
+                            L'une des plus grandes athlètes françaises, triple médaillée olympique en athlétisme,
+                            notamment en 400m. Elle sera l'un des deux derniers relayeurs
+                        </p>
+                    </div>
+                    <img src="../images/relais/relayeurs/marie.jpg" alt="Photo Marie-José Perec" title="Photo Marie-José Perec">
+                </article>
+
+                <article>
+                    <div>
+                        <h4>Tibo Inshape</h4>
+                        <p>
+                            Celèbre youtubeur français, connus pour ses vidéos de motivations et de fitness, il
+                            représente le respect dans son domaine.
+                        </p>
+                    </div>
+                    <img src="../images/relais/relayeurs/tibo.jpg" alt="Photo Tibo Inshape" title="Photo Tibo Inshape">
+                </article>
+
+                <article>
+                    <div>
+                        <h4>Teddy Rinner</h4>
+                        <p>
+                            Un judoka français, double champion olympique et dix fois champion du monde, reconnu pour sa
+                            domination en judo. Et sera l'un des deux derniers relayeurs
+                        </p>
+                    </div>
+                    <img src="../images/relais/relayeurs/teddy.jpg" alt="Photo Teddy Rinner" title="Photo Teddy Rinner">
+                </article>
+
+                <article>
+                    <div>
+                        <h4>Renaud Lavillenie</h4>
+                        <p>
+                            Un perchiste français, champion olympique 2012 et détenteur de plusieurs records du monde
+                        </p>
+                    </div>
+                    <img src="../images/relais/relayeurs/renaud.jpg" alt="Photo Renaud Lavillenie" title="Photo Renaud Lavillenie">
+
+                </article>
+
+                <article>
+                    <div>
+                        <h4>Tony Estanguet</h4>
+                        <p>
+                            Un canoéiste français, triple champion olympique et président du comité d'organisation des
+                            Jeux de Paris 2024
+                        </p>
+                    </div>
+                    <img src="../images/relais/relayeurs/tony.jpg" alt="Photo Tony Estanguet" title="Photo Tony Estanguet">
+                </article>
+            </div>
+
+        </section>
+
+        <!-- 4ème section avec l'avenir de la flamme olympique et le futur des JO -->
+        <section>
+            <h2>La flamme olympique pour l'avenir...</h2>
+            <article>
+                <img src="../images/relais/los-angeles.jpg" alt="Image JO Los Angeles" title="Image JO Los Angeles">
+                <div>
+                    <h3>Un futur prometteur</h3>
+                    <p>
+                        La flamme olympique a accompli son voyage à travers la France, illuminant les villes et les cœurs en
+                        attendant l'arrivée des Jeux de <strong>2024</strong>. Mais son rôle ne s'arrête pas là. Elle
+                        s'éteint temporairement, mais ne disparaît pas à jamais. En <strong>2028</strong>, elle renaîtra
+                        pour la prochaine édition des Jeux Olympiques, cette fois à <strong>Los Angeles</strong>, prête à
+                        repartir pour un nouveau voyage, symbolisant l'unité et l'esprit sportif mondial.
+                    </p>
+                </div>
+            </article>
+
+
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div>
+
+            <div>
+
+                <h4>Navigation suplémentaire</h4>
+
+                <nav>
+
+                    <a href="https://www.figma.com/design/zf6yQrWYtgj2dRsCGiWE6d/S1.05---Maquettage?node-id=0-1&p=f&t=EvZRfyJdlxEf63pL-0">Plan du site</a>
+                    <a href="https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-see-more-HP-fr-nl">Boutique Olympique</a>
+                    <a href="https://olympics.com/cio/faq">F.A.Q.</a>
+                    <img src="../images/Footer/logo_footer.png" alt="Logo JO Paris 2024" title="Logo JO Paris 2024">
+
+                </nav>          
+
+            </div>
+
+            <div>
+
+                <h4>Contacts</h4>
+
+                <address>
+
+                    <a href="https://maps.app.goo.gl/gGTcy8TCAw5E7dBS9">
+                        IUT Lannion<br>
+                        Rue Edouard Branly<br>
+                        22300 - Lannion
+                    </a>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <a href="tel:0809540550">+33 809 540 550</a>
+                    <br>
+                    <a href="mailto:Pressoperations@paris2024.org">Pressoperations@paris2024.org</a>
+
+                </address>
+
+            </div>
+
+            <div>
+
+                <h4>Réseaux Sociaux</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="https://www.instagram.com/paris2024/"><p><img src="../images/Footer/insta.png" alt="Logo Instagram" title="Logo Instagram"> Instagram</p></a>
+                    </li>
+
+                    <li> 
+                        <a href="https://www.facebook.com/Paris2024/?locale=fr_FR   "> <p> <img src="../images/Footer/facebook.png" alt="Logo FaceBook" title="Logo FaceBook"> FaceBook </p></a>
+                    </li>
+  
+                    <li>
+                        <a href="https://www.tiktok.com/@jeuxolympiques?lang=fr"><p><img src="../images/Footer/tiktok.png" alt="Logo TikTok" title="Logo TikTok"> TikTok</p></a>
+                    </li>
+
+                    <li> 
+                        <a href="https://x.com/paris2024"><p> <img src="../images/Footer/twitter.png" alt="Logo Twiiter" title="Logo Twiiter"> Twitter</p></a>
+                    </li>    
+                
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <p><strong><em>Copyright © Jeux Olympiques - Paris 2024.<br>Tous droits réservés.</em></strong></p>
+            <p><strong><em>Mentions légales<br>Politique de confidentialité<br>Conditions générales d'utilisation</em></strong></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+
+
+</html>

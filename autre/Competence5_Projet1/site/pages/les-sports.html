@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabin CHEVALIER">
+    <meta name="keyword" content="sports, jo paris 2024, list of jo sports" lang="fr">
+    <meta name="keyword" content="" lang="en">
+    <meta name="descrition" content="Page contenant l'ensembles des disciplines sportives présentes lors des JO de paris 2024">
+    <title>Page les sports - JO Paris 2024</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="body-accueil">
+    <section> <!--Block qui contient le popup et son script-->
+        <div class="overlay-popup">
+            <div class="content-popup">
+                <h2>Rien n'est prévu pour ce bouton</h2>
+                <p>Ce bouton est présent mais n'a aucune fonction pour le moment. Il est là uniquement à des fins décoratives ou a été imaginé dans le cadre d'une future fonctionnalité qui pourrait être ajoutée ultérieurement. Sa présence permet de préfigurer des évolutions possibles du produit ou de familiariser les utilisateurs avec son emplacement en vue d'une mise à jour prochaine. </p>
+                <button onclick="openPopup()">X</button>
+            </div>
+        </div>
+        <script>
+
+            const openPopup = () => {
+                const popup = document.querySelector(".overlay-popup");
+                popup.classList.toggle('active-popup')
+            }
+
+        </script>
+    </section>
+
+    <header>
+        <img src="../images/header/logo-JO.png" alt="Logo Paris 2024" title="Paris 2024">
+        <nav>
+            <ul>
+                <li>
+                    <a href="accueil.html">
+                        <img src="../images/header/icone-accueil.png" alt="Icone page d'accueil" title="Icone page d'accueil">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="openPopup()">
+                        <img src="../images/header/logo-para.png" alt="Icone jeux Paralympiques" title="Icone jeux paralympiques">
+                        Jeux Paralympiques
+                    </a>
+                </li>
+                <li>
+                    <a href="./parcours-flamme.html">
+                        <img src="../images/header/icone-flamme.png" alt="Icone relais de la flamme" title="Icone relais de la flamme">
+                        Relais de la flamme
+                    </a>
+                </li>
+                <li>
+                    <a href="./les-sports.html">
+                        <img src="../images/header/icone-volley.png" alt="Icone page les sports" title="Icone page les sports">
+                        Les sports
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="les-sports">
+
+        <h1 id="titre-les-sports"><span>LES SPORTS</span></h1>
+
+        <!-- 1 article = un lien vers une page de discipline -->
+
+        <section>
+            <h2>Ensembles des sports aux JO de paris 2024</h2>
+            <div>
+                <article>
+                    <h5>SPORTS DE COMBAT</h5>
+                    <div id="img-sport-de-combat"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>COURSE</h5>
+                    <div id="img-course"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>SAUT</h5>
+                    <div id="img-saut"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>CYCLISME</h5>
+                    <div id="img-cyclisme"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+
+
+
+
+
+
+                <article>
+                    <h5>CYCKISME SUR PISTE</h5>
+                    <div id="img-cyclisme-sur-piste"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>GYMNASTIQUE ARTISTIQUE</h5>
+                    <div id="img-gymnastique"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>SPORTS COLLECTIFS</h5>
+                    <div id="img-sport-co"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>NATATION VITESSE</h5>
+                    <div id="img-natation-vitesse"></div>
+                    <a href="./discipline.html" class="plus-informtion">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+
+
+
+
+
+
+
+
+
+                <article>
+                    <h5>SPORTS D'EAU</h5>
+                    <div id="img-sport-eau"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>SPORTS DE GLISSE</h5>
+                    <div id="img-glisse"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>ÉQUITATION</h5>
+                    <div id="img-equitation"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>ESCRIME</h5>
+                    <div id="img-escrime"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+
+
+
+
+
+
+
+                
+
+
+                <article>
+                    <h5>SPORTS DE RAQUETTE</h5>
+                    <div id="img-sport-de-raquette"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+
+                <article>
+                    <h5>MULTISPORT</h5>
+                    <div id="img-multisport"></div>
+                    <a href="#" class="plus-informtion" onclick="openPopup()">
+                        <p>PLUS D'INFORMATION</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div>
+
+            <div>
+
+                <h4>Navigation suplémentaire</h4>
+
+                <nav>
+
+                    <a href="https://www.figma.com/design/zf6yQrWYtgj2dRsCGiWE6d/S1.05---Maquettage?node-id=0-1&p=f&t=EvZRfyJdlxEf63pL-0">Plan du site</a>
+                    <a href="https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-see-more-HP-fr-nl">Boutique Olympique</a>
+                    <a href="https://olympics.com/cio/faq">F.A.Q.</a>
+                    <img src="../images/Footer/logo_footer.png" alt="Logo JO Paris 2024" title="Logo JO Paris 2024">
+
+                </nav>          
+
+            </div>
+
+            <div>
+
+                <h4>Contacts</h4>
+
+                <address>
+
+                    <a href="https://maps.app.goo.gl/gGTcy8TCAw5E7dBS9">
+                        IUT Lannion<br>
+                        Rue Edouard Branly<br>
+                        22300 - Lannion
+                    </a>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <a href="tel:0809540550">+33 809 540 550</a>
+                    <br>
+                    <a href="mailto:Pressoperations@paris2024.org">Pressoperations@paris2024.org</a>
+
+                </address>
+
+            </div>
+
+            <div>
+
+                <h4>Réseaux Sociaux</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="https://www.instagram.com/paris2024/"><p><img src="../images/Footer/insta.png" alt="Logo Instagram" title="Logo Instagram"> Instagram</p></a>
+                    </li>
+
+                    <li> 
+                        <a href="https://www.facebook.com/Paris2024/?locale=fr_FR   "> <p> <img src="../images/Footer/facebook.png" alt="Logo FaceBook" title="Logo FaceBook"> FaceBook </p></a>
+                    </li>
+  
+                    <li>
+                        <a href="https://www.tiktok.com/@jeuxolympiques?lang=fr"><p><img src="../images/Footer/tiktok.png" alt="Logo TikTok" title="Logo TikTok"> TikTok</p></a>
+                    </li>
+
+                    <li> 
+                        <a href="https://x.com/paris2024"><p> <img src="../images/Footer/twitter.png" alt="Logo Twiiter" title="Logo Twiiter"> Twitter</p></a>
+                    </li>    
+                
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <p><strong><em>Copyright © Jeux Olympiques - Paris 2024.<br>Tous droits réservés.</em></strong></p>
+            <p><strong><em>Mentions légales<br>Politique de confidentialité<br>Conditions générales d'utilisation</em></strong></p>
+
+        </div>
+
+    </footer>
+</body>
+
+
+</html>

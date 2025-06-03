@@ -1,0 +1,136 @@
+Drop CONSTRAINT takes_part_fk1;
+Drop CONSTRAINT takes_part_fk2;
+Drop CONSTRAINT takes_part_fk3;
+Drop VAR takes_part;
+
+Drop CONSTRAINT fin_fk1;
+Drop CONSTRAINT fin_fk2;
+Drop CONSTRAINT fin_fk3;
+Drop VAR fin;
+
+Drop CONSTRAINT start_fk1;
+Drop CONSTRAINT start_fk2;
+Drop CONSTRAINT start_fk3;
+Drop VAR start;
+
+DROP CONSTRAINT plays_fk1;
+DROP CONSTRAINT plays_fk2;
+DROP VAR plays;
+
+
+DROP CONSTRAINT match_fk1;
+DROP CONSTRAINT match_fk2;
+DROP CONSTRAINT match_fk3;
+DROP VAR match;
+
+DROP CONSTRAINT days_fk1;
+DROP VAR days;
+
+DROP CONSTRAINT team_fk1;
+DROP VAR team;
+
+
+DROP CONSTRAINT characteristics_fk1;
+DROP CONSTRAINT characteristics_fk2;
+DROP VAR characteristics;
+
+DROP VAR season;
+DROP VAR player;
+DROP VAR league;
+DROP VAR date;
+DROP VAR club;
+
+
+VAR league BASE RELATION{
+league_id INT,
+league_name CHAR} KEY { league_id };
+
+VAR season BASE RELATION{
+season_id CHAR} KEY { season_id };
+
+VAR characteristics BASE RELATION{
+league_id INT,
+season_id CHAR,
+number_of_teams CHAR} KEY { league_id, season_id };
+CONSTRAINT characteristics_fk1 characteristics { league_id } <= league { league_id };
+CONSTRAINT characteristics_fk2 characteristics { season_id } <= season { season_id };
+
+VAR club BASE RELATION{
+club_id INT,
+club_name CHAR,
+club_acronym CHAR} KEY {club_id};
+
+VAR team BASE RELATION{
+team_id INT,
+team_name CHAR,
+coach_name_firstname CHAR,
+club_id INT} KEY {team_id};
+CONSTRAINT team_fk1 team{club_id} <= club{club_id};
+
+VAR days BASE RELATION{
+days_nr INT,
+season_id CHAR} KEY {season_id, days_nr};
+CONSTRAINT days_fk1 days{season_id} <= season{season_id};
+
+VAR match BASE RELATION{
+attendance INT,
+local_goals INT,
+visitors_goal INT,
+match_date_time CHAR,
+local_id INT,
+visitor_id INT,
+days_nr INT,
+season_id CHAR} KEY{local_id,visitor_id,season_id};
+CONSTRAINT match_fk1 match{local_id} <= team{team_id} RENAME {team_id as local_id};
+CONSTRAINT match_fk2 match{visitor_id} <= team{team_id} RENAME {team_id as visitor_id};
+CONSTRAINT match_fk3 match{season_id, days_nr} <= days{season_id, days_nr};
+
+
+VAR player BASE RELATION{
+player_id INT,
+player_name CHAR,
+player_firstname CHAR,
+date_of_birth CHAR,
+nationality CHAR,
+birth_country CHAR,
+weight RATIONAL,
+size RATIONAL } KEY{ player_id };
+
+VAR plays BASE RELATION{
+position CHAR,
+starting_time INT,
+yellow_card INT,
+red_card BOOL,
+shirt_nr INT,
+player_id INT,
+days_nr INT,
+season_id CHAR} KEY{ player_id, season_id, days_nr };
+CONSTRAINT plays_fk1 plays{player_id} <= player{player_id};
+CONSTRAINT plays_fk2 plays{season_id, days_nr} <= days{season_id, days_nr};
+
+VAR date BASE RELATION{
+date CHAR} KEY{ date };
+
+VAR start BASE RELATION{
+team_id INT,
+player_id INT,
+date CHAR} KEY{team_id,player_id,date};
+CONSTRAINT start_fk1 start{team_id} <= team{team_id};
+CONSTRAINT start_fk2 start{player_id} <= player{player_id};
+CONSTRAINT start_fk3 start{date} <= date{date};
+
+VAR fin BASE RELATION{
+team_id INT,
+player_id INT,
+date CHAR} KEY{team_id,player_id,date};
+CONSTRAINT fin_fk1 fin{team_id} <= team{team_id};
+CONSTRAINT fin_fk2 fin{player_id} <= player{player_id};
+CONSTRAINT fin_fk3 fin{date} <= date{date};
+
+VAR takes_part BASE RELATION{
+team_id INT,
+league_id INT,
+season_id CHAR} KEY{team_id,season_id};
+CONSTRAINT takes_part_fk1 takes_part{team_id} <= team{team_id};
+CONSTRAINT takes_part_fk2 takes_part{league_id} <= league{league_id};
+CONSTRAINT takes_part_fk3 takes_part{season_id} <= season{season_id};

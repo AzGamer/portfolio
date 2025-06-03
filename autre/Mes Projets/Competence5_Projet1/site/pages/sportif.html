@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page sportif</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section> <!--Block qui contient le popup et son script FAIT PAR GABIN CHEVALIER-->
+        <div class="overlay-popup">
+            <div class="content-popup">
+                <h2>Rien n'est prévu pour ce bouton</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
+                <button onclick="openPopup()">X</button>
+            </div>
+        </div>
+        <script>
+
+            const openPopup = () => {
+                const popup = document.querySelector(".overlay-popup");
+                popup.classList.toggle('active-popup')
+            }
+
+        </script>
+    </section>
+
+    <header>
+        <img src="../images/header/logo-JO.png" alt="Logo Paris 2024" title="Paris 2024">
+        <nav>
+            <ul>
+                <li>
+                    <a href="./accueil.html">
+                        <img src="../images/header/icone-accueil.png" alt="Icone page d'accueil" title="Icone page d'accueil">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a onclick="openPopup()" href="#">
+                        <img src="../images/header/logo-para.png" alt="Icone jeux Paralympiques"
+                            title="Icone jeux paralympiques">
+                        Jeux Paralympiques
+                    </a>
+                </li>
+                <li>
+                    <a href="./parcours-flamme.html">
+                        <img src="../images/header/icone-flamme.png" alt="Icone relais de la flamme"
+                            title="Icone relais de la flamme">
+                        Relais de la flamme
+                    </a>
+                </li>
+                <li>
+                    <a href="./les-sports.html">
+                        <img src="../images/header/icone-volley.png" alt="Icone page les sports" title="Icone page les sports">
+                        Les sports
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="sportif">
+
+        <h1> LÉON MARCHAND </h1>
+
+        <nav>
+
+            <a href="#biographie">
+                <h4> Biographie </h4>
+
+                <img src="../images/Sportif/navigation/biographie.jpg" alt="image biographie" title="image biographie">
+
+            </a>
+
+            <a href="#palmarès">
+                <h4> Palmarès </h4>
+
+                <img src="../images/Sportif/navigation/palmarès.jpg" alt="image palmarès" title="image palmarès">
+
+            </a>
+
+            <a href="#momentfort_carroussel">
+
+                <h4> Moments Forts </h4>
+
+                <img src="../images/Sportif/navigation/moment-fort.jpg" alt="image moment-fort" title="image moment-fort">
+
+            </a>
+
+            <a href="#momentfort">
+
+                <h4> Moments Forts </h4>
+
+                <img src="../images/Sportif/navigation/moment-fort.jpg" alt="image moment-fort" title="image moment-fort">
+
+            </a>
+
+        </nav>
+
+        <article>
+
+            <h2 id="biographie"> Biographie </h2>
+
+            <div>
+
+                <p>
+
+                    Léon Marchand, né le 17 mai 2002 à Toulouse, est un nageur français et l’une des étoiles montantes
+                    de la natation mondiale.
+                    Issu d’une famille de nageurs, avec un père, Xavier Marchand, ancien médaillé d’argent mondial, et
+                    une mère, Céline Bonnet,
+                    également nageuse de haut niveau, Léon s’est rapidement imposé comme un athlète polyvalent et
+                    prometteur.
+
+                    <br>
+                    <br>
+
+                    Après des débuts brillants à Toulouse, il a attiré l’attention sur la scène internationale en
+                    participant aux Jeux olympiques de Tokyo 2020,
+                    où il a atteint les demi-finales du 400 mètres 4 nages.
+                    Sa carrière a pris un tournant décisif en 2022 lorsqu’il a rejoint les États-Unis pour s’entraîner
+                    sous la direction de Bob Bowman,
+                    ancien coach de Michael Phelps, à l’université d’État de l’Arizona.
+                    Sous sa tutelle, Léon a dominé les compétitions universitaires américaines (NCAA)
+
+                </p>
+
+                <img src="../images/Sportif/leon-article-biographie.jpg" alt="image article biographie"
+                    title="image article biographie">
+
+            </div>
+
+        </article>
+
+        <article>
+
+            <h2 id="palmarès"> Palmarès </h2>
+
+            <div>
+
+                <table>
+
+                    <caption> Jeux Olympiques </caption>
+
+                    <thead>
+
+                        <tr>
+
+                            <th rowspan="2"> <span> Édition </span> </th>
+                            <th colspan="6"> <span> Épreuves </span> </th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td> <span> 200m brasse </span> </td>
+                            <td> <span> 200m papillon </span> </td>
+                            <td> <span> 200m 4 nages </span> </td>
+                            <td> <span> 400m 4 nages </span> </td>
+                            <td> <span> Relais 4x100m 4 nages masculin </span> </td>
+                            <td> <span> Relais 4x100m 4 nages mixte </span> </td>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td> <span> Tokyo 2021 </span> </td>
+                            <td> <span> - </span> </td>
+                            <td> <span> 14e 8e de sa demi-finale 1min 55s 68 </span> </td>
+                            <td> <span> 18e 6e de sa série 1min 58s 30 </span> </td>
+                            <td> <span> 6e 4min 11s 16 </span> </td>
+                            <td> <span> 10e 3min 33s 41 Temps personnel : 52s 5 </span> </td>
+                            <td> <span> - </span> </td>
+
+                        </tr>
+
+                    </tbody>       
+
+                    <tfoot>
+
+                        <tr>
+
+                            <td> <span> Paris 2024 </span> </td>
+                            <td class="or"> <span> Or 2min 5s 85 </span></td>
+                            <td class="or"> <span> Or 1min 51s 21 </span> </td>
+                            <td class="or"> <span> Or 1min 54s 06 </span> </td>
+                            <td class="or"> <span> Or 4min 2s 95 </span> </td>
+                            <td class="bronze"> <span> Bronze 3min 28s 38 TP: 58s 62 </span> </td>
+                            <td> <span> 4e 3min 40s 96 TP : 58s 66 </span> </td>
+
+                        </tr>
+
+                    </tfoot>
+
+                </table>
+
+            </div>
+
+            <div>
+
+                <table>
+
+                    <caption> Championnats du Monde </caption>
+
+                    <thead>
+
+                        <tr>
+
+                            <th rowspan="2"> <span> Édition </span> </th>
+                            <th colspan="5"> <span> Épreuves </span> </th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td> <span> 200m papillon </span> </td>
+                            <td> <span> 200m 4 nages </span> </td>
+                            <td> <span> 400m 4 nages </span> </td>
+                            <td> <span> Relais 4x100m 4 nages masculin </span> </td>
+                            <td> <span> Relais 4x200m 4 nages masculin </span> </td>
+
+
+                        </tr>
+
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td> <span> Budapest 2022 </span> </td>
+                            <td class="argent"><span> Argent 1min 53s 37 </span> </td>
+                            <td class="or"> <span> OR 1min 55s 22 </span> </td>
+                            <td class="or"> <span> OR 4min 4s 28 </span> </td>
+                            <td> <span> 5e 3min 32s 37 </span> </td>
+                            <td> <span> 7e 7min 8s 78 </span> </td>
+
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+
+                        <tr>
+
+                            <td> <span> Fukuoka 2023 </span> </td>
+                            <td class="or"> <span> OR 1min 52s 43 </span> </td>
+                            <td class="or"> <span> OR 1min 54s 82 </span> </td>
+                            <td class="or"> <span> OR 4min 2s 50 </span> </td>
+                            <td> <span> 4e 3min 29s 88 </span> </td>
+                            <td> <span> 4e 7min 3s 86 </span> </td>
+
+                        </tr>
+
+                    </tfoot>
+
+                </table>
+
+            </div>    
+
+        </article>
+
+        <article>
+            
+            <h2 id="momentfort_carroussel"> Moments Forts </h2>
+    
+            <div>
+                <span id="image_1"></span>
+                <span id="image_2"></span>
+                <span id="image_3"></span>
+                <span id="image_4"></span>
+                <span id="image_5"></span>
+            
+                <div class="cadre image_1">
+                    <a href="https://youtu.be/avZdgv0Xcz0" class="lien_youtube"></a>
+                    <a href="#image_5" class="fleche precedente"></a>
+                    <a href="#image_2" class="fleche suivante"></a>
+                </div>
+    
+                <div class="cadre image_2">
+                    <a href="https://youtu.be/IC6WTSycHuo" class="lien_youtube"></a>
+                    <a href="#image_1" class="fleche precedente"></a>
+                    <a href="#image_3" class="fleche suivante"></a>
+                </div>
+    
+                <div class="cadre image_3">
+                    <a href="https://youtu.be/Tdx1OR4kgpg?si=ezXAazzOUPHar421" class="lien_youtube"></a>
+                    <a href="#image_2" class="fleche precedente"></a>
+                    <a href="#image_4" class="fleche suivante"></a>
+                </div>
+    
+                <div class="cadre image_4">
+                    <a href="https://youtu.be/NmQk2BjelRI" class="lien_youtube"></a>
+                    <a href="#image_3" class="fleche precedente"></a>
+                    <a href="#image_5" class="fleche suivante"></a>
+                </div>
+    
+                <div class="cadre image_5">
+                    <a href="https://youtu.be/6SxpEbOTmMg?si=Sf7qrQbPAu9wMG4c" class="lien_youtube"></a>
+                    <a href="#image_4" class="fleche precedente"></a>
+                    <a href="#image_1" class="fleche suivante"></a>
+                </div>
+    
+            </div>
+    
+        </article>
+
+        <article>
+
+            <h2 id="momentfort"> Moments Forts </h2>
+
+            <div>
+
+                <a href="https://youtu.be/NmQk2BjelRI">
+
+                    <figure>
+
+                        <img src="../images/Sportif/moment-fort/200m-brasse.jpg" alt="" title="">
+
+                        <img class="btn_ytb" src="../images/Sportif/moment-fort/btn_ytb.png" alt="bouton video ytb"
+                            title="bouton video ytb">
+
+                        <figcaption> Finale 200m brasse </figcaption>
+
+                    </figure>
+
+                </a>
+
+
+                <a href="https://youtu.be/IC6WTSycHuo">
+
+                    <figure>
+
+                        <img src="../images/Sportif/moment-fort/200m-papillon.jpg" alt="image 200m papillon"
+                            title="image 200m papillon">
+
+                        <img class="btn_ytb" src="../images/Sportif/moment-fort/btn_ytb.png" alt="bouton video ytb"
+                            title="bouton video ytb">
+
+                        <figcaption> Finale 200m Papillon </figcaption>
+
+                    </figure>
+
+                </a>
+
+                <a href="https://youtu.be/avZdgv0Xcz0">
+
+                    <figure>
+
+                        <img src="../images/Sportif/moment-fort/4nages.jpg" alt="image 4 nages" title="image 4 nages">
+
+                        <img class="btn_ytb" src="../images/Sportif/moment-fort/btn_ytb.png" alt="bouton video ytb"
+                            title="bouton video ytb">
+
+                        <figcaption> Finale 200m 4nages </figcaption>
+
+                    </figure>
+
+                </a>
+
+                <a href="https://youtu.be/Tdx1OR4kgpg?si=ezXAazzOUPHar421">
+
+                    <figure>
+
+                        <img src="../images/Sportif/moment-fort/4nages.jpg" alt="image 4 nages" title="image 4 nages">
+
+                        <img class="btn_ytb" src="../images/Sportif/moment-fort/btn_ytb.png" alt="bouton video ytb"
+                            title="bouton video ytb">
+
+                        <figcaption> Finale 400m 4nages </figcaption>
+
+                    </figure>
+
+                </a>
+
+                <a href="https://youtu.be/6SxpEbOTmMg?si=Sf7qrQbPAu9wMG4c">
+
+                    <figure>
+
+                        <img src="../images/Sportif/moment-fort/podium.jpg" alt="image podium" title="image podium">
+
+                        <img class="btn_ytb" src="../images/Sportif/moment-fort/btn_ytb.png" alt="bouton video ytb"
+                            title="bouton video ytb">
+
+                        <figcaption> Podium </figcaption>
+
+                    </figure>
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div>
+
+            <div>
+
+                <h4>Navigation suplémentaire</h4>
+
+                <nav>
+
+                    <a href="">Plan du site</a>
+                    <a href="https://shop.olympics.com/fr/paris-2024/t-1299990829+z-949567-2073334460?_s=bm-fi-ioc-prtsite-P24-see-more-HP-fr-nl">Boutique Olympique</a>
+                    <a href="">F.A.Q.</a>
+                    <img src="../images/footer/logo_footer.png" alt="Logo JO Paris 2024" title="Logo JO Paris 2024">
+
+                </nav>          
+
+            </div>
+
+            <div>
+
+                <h4>Contacts</h4>
+
+                <address>
+
+                    IUT Lannion<br>
+                    Rue Edouard Branly<br>
+                    22300 - Lannion<br>
+                    <br>
+                    <hr>
+                    <br>
+                    +33 809 540 550 <br>
+                    <a href="mailto:Pressoperations@paris2024.org">Pressoperations@paris2024.org</a>
+
+                </address>
+
+            </div>
+
+            <div>
+
+                <h4>Réseaux Sociaux</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="https://www.instagram.com/paris2024/"><p><img src="../images/footer/insta.png" alt="Logo Instagram" title="Logo Instagram"> Instagram</p></a>
+                    </li>
+
+                    <li> 
+                        <a href="https://www.facebook.com/Paris2024/?locale=fr_FR   "> <p> <img src="../images/footer/facebook.png" alt="Logo FaceBook" title="Logo FaceBook"> FaceBook </p></a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@jeuxolympiques?lang=fr"><p><img src="../images/footer/tiktok.png" alt="Logo TikTok" title="Logo TikTok"> TikTok</p></a>
+                    </li>
+
+                    <li> 
+                        <a href="https://x.com/paris2024"><p> <img src="../images/footer/twitter.png" alt="Logo Twiiter" title="Logo Twiiter"> Twitter</p></a>
+                    </li>    
+                
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <p><strong><em>Copyright © Jeux Olympiques - Paris 2024.<br>Tous droits réservés.</em></strong></p>
+            <p><strong><em>Mentions légales<br>Politique de confidentialité<br>Conditions générales d'utilisation</em></strong></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
