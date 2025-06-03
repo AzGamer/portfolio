@@ -161,6 +161,11 @@ section:nth-of-type(2)>div> img{
      
 }
 
+.ecole{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+}
 
 
 
@@ -177,6 +182,11 @@ section:nth-of-type(3)>div{
 
 }
 
+
+section:nth-of-type(3)>div>article>h3{
+    text-align: center;
+    font-size: 2em;
+}
 section:nth-of-type(3)>div>article>img{
     width: 50%;
     height: auto;
@@ -203,8 +213,7 @@ section:nth-of-type(3) div>article>ul>li{
 }
 section:nth-of-type(3) div>article>ul>li>img{
     width: 50px;
-    margin-right: 10px; 
-    
+    margin-right: 10px;    
 }
 
 
@@ -266,6 +275,11 @@ section:nth-of-type(3)>div>article:hover{
 
 section:nth-of-type(3)>div>article>p{
     text-align: center;
+}
+
+.diplome_ecole{
+    text-decoration: none;
+    color: white;
 }
 
 /********************** Section4 - Compétences **********************/
@@ -392,7 +406,7 @@ section:last-of-type>div>div>a{
     font-weight: 900;
     color: white;
     background-color: rgb(95, 95, 95) ; 
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 15px;
     display: flex;
     align-items: center;
@@ -405,6 +419,8 @@ section:last-of-type>div>div>a>div>span{
 
 section:last-of-type>div>div>a:hover{
     background-color:rgb(78, 78, 78);
+    transform: translateY(-20px);
+
 }
 
 section:last-of-type>div>div>a:active{
