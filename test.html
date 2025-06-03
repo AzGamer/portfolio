@@ -1,97 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Transition de page animée</title>
-<style>
-  body, html {
-    margin: 0; padding: 0;
-    overflow-x: hidden;
-    font-family: sans-serif;
-  }
-  .page {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: white;
-    transition: transform 0.6s ease, opacity 0.6s ease;
-  }
-  #page1 {
-    background: #3498db;
-    z-index: 2;
-  }
-  #page2 {
-    background: #e74c3c;
-    transform: translateX(100%);
-    opacity: 0;
-    z-index: 1;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactez-nous</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
 
-  /* Classes pour l’animation */
-  .page.slide-out-left {
-    transform: translateX(-100%);
-    opacity: 0;
-    z-index: 1;
-  }
-  .page.slide-in-right {
-    transform: translateX(0);
-    opacity: 1;
-    z-index: 2;
-  }
+    .contact-section {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
 
-  button {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-</style>
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      display: block;
+      width: 100%;
+      background-color: #007BFF;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
 
-<div id="page1" class="page slide-in-right">
-  Page 1
-</div>
+  <section class="contact-section">
+    <h2>Contactez-nous</h2>
+    <form class="contact-form">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" placeholder="Votre nom" required>
 
-<div id="page2" class="page">
-  Page 2
-</div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Votre email" required>
 
-<button id="switchBtn">Aller à la page 2</button>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Votre message" required></textarea>
 
-<script>
-  const page1 = document.getElementById('page1');
-  const page2 = document.getElementById('page2');
-  const btn = document.getElementById('switchBtn');
-
-  let onPage1 = true;
-
-  btn.addEventListener('click', () => {
-    if(onPage1) {
-      page1.classList.add('slide-out-left');
-      page1.classList.remove('slide-in-right');
-      page2.classList.add('slide-in-right');
-      page2.classList.remove('slide-out-left');
-      btn.textContent = "Retour à la page 1";
-    } else {
-      page2.classList.add('slide-out-left');
-      page2.classList.remove('slide-in-right');
-      page1.classList.add('slide-in-right');
-      page1.classList.remove('slide-out-left');
-      btn.textContent = "Aller à la page 2";
-    }
-    onPage1 = !onPage1;
-  });
-</script>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
 
 </body>
 </html>

@@ -487,7 +487,7 @@ section:nth-of-type(4)>div>a:active{
     height: auto;
     margin: 15px;
     background-color: rgb(78, 78, 78);
-    padding: 15px;
+    padding: 0 15px 15px 15px;
     border-radius: 20px;
     line-height: 1.2em;
     text-align: justify;
